@@ -39,4 +39,7 @@ This repository and all contributions are licensed under the **MIT License**. By
 
 ---
 
-Let’s transform prefab data into smart, accessible, and actionable insights for the digital age of construction! 🚀
+## About MOD
+MOD is an open-source machine-learning powered platform that unlocks the prefab supply chain. We allow architects to do prefab potential checks with price, CO2 impact and delivery time very early in the design phase - 100% model-based and parametric. We give manufacturers access to projects that are now unobtainable.
+
+Learn more about MOD and join us in shaping the future of modular construction [https://mod.construction](https://mod.construction)! 🚀
