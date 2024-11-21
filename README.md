@@ -1,20 +1,42 @@
-# MOD Project Template
+# Prefab Smart Parser
 
-Welcome to the MOD project template repository! This repository is designed to serve as a starting point for any open-source project under the MOD ecosystem, ensuring consistency, clarity, and collaboration.
-
-## Overview
-
-MOD is an open-source platform for the modular construction industry. Our mission is to enhance efficiency, cost-effectiveness, and sustainability in construction through digital innovation. This repository is a template for projects adhering to our principles and standards, licensed under the **MIT License**.
+Welcome to the **Prefab Smart Parser** challenge repository! This is the home for the **AI for Prefab** hackathon challenge, where we aim to revolutionize how prefab product data is structured and utilized in the construction industry.
 
 ---
 
-## Contributing
+## 🚀 Challenge Overview
 
-We appreciate feedback and contribution to this project! Before you get started, please see the following:
+### **Problem**
+The construction industry is rich in data but faces a significant challenge: prefab product information is often locked in unstructured formats like PDFs or scattered across web pages. This creates inefficiencies, hinders digital workflows, and limits data-driven decision-making.
 
-* [Contribution guidelines](CONTRIBUTING.md)
-* [Code of conduct](CODE_OF_CONDUCT.md)
+### **Solution**
+Create an AI-powered tool that leverages large language models (LLMs) to extract and structure prefab product data into the **mod-dlm** standard. This open-source, domain-specific language for prefab construction elements will enable seamless integration of prefab components into digital workflows for architects, engineers, and manufacturers.
 
-## License
+All solutions will be licensed and stay under the **MIT License**, promoting open collaboration and innovation across the industry.
 
-[MIT](LICENSE)
+---
+
+## 💡 Why Join?
+
+- **Tackle a Real-World Problem:** Solve one of the construction industry’s most pressing data challenges.
+- **Showcase Your Skills:** Work with AI, NLP, and data transformation technologies.
+- **Drive Innovation:** Contribute to an open-source ecosystem shaping the future of prefab construction.
+- **Collaborate with Experts:** Join passionate developers, architects, and engineers in creating impactful solutions.
+
+---
+
+## 🛠 Resources
+
+- **[mod-dlm on GitHub](https://github.com/mod-construction/mod-dlm):** Learn about the open-source standard for describing prefab construction elements.
+- Hackathon mentors and resources will be available throughout the event.
+- Questions? Feel free to reach out to Yashar directly on Slack.
+
+---
+
+## 📄 License
+
+This repository and all contributions are licensed under the **MIT License**. By participating, you agree to share your work under this license to encourage open collaboration and adoption.
+
+---
+
+Let’s transform prefab data into smart, accessible, and actionable insights for the digital age of construction! 🚀
