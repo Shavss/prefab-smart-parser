@@ -1,3 +1,8 @@
+<div align="center">
+<img src="assets/mod_challenge.png" alt="mod challenge"/>
+</div>
+
+
 # Prefab Smart Parser
 
 Welcome to the **Prefab Smart Parser** challenge repository! This is the home for the **AI for Prefab** hackathon challenge, where we aim to revolutionize how prefab product data is structured and utilized in the construction industry.
