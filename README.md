@@ -28,7 +28,7 @@ All solutions will be licensed and stay under the **MIT License**, promoting ope
 ## 🛠 Resources
 
 - **[mod-dlm on GitHub](https://github.com/mod-construction/mod-dlm):** Learn about the open-source standard for describing prefab construction elements.
-- **Sample Unstructured Product Sheets:** Provided in a [Google Drive folder](https://drive.google.com/drive/folders/19LgBolM8rnz2p3_qOhbqIcsMwOG_md96?usp=sharing) (link to be added).
+- **Sample Unstructured Product Sheets:** Provided in a [Google Drive folder](https://drive.google.com/drive/folders/19LgBolM8rnz2p3_qOhbqIcsMwOG_md96?usp=sharing).
   - **Step 1:** Identify files containing relevant product data.
   - **Step 2:** Understand the data and transform it into the **mod-dlm** format.
 - Hackathon mentors and resources will be available throughout the event.
