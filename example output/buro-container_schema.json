@@ -1,0 +1,83 @@
+{
+  "id": "V2.0/2022",
+  "name": "BÜRO-CONTAINER V2.0 / 2022",
+  "description": "Office container with various aspects including roof, floor, wall panels, pillars, and doors.",
+  "boundingBox": {
+    "width": 0,
+    "height": 0,
+    "depth": 0
+  },
+  "images": [],
+  "buildingSystem": "Modular",
+  "productCategory": "Containers",
+  "material": {
+    "finishMaterial": "Steel",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2.438,
+      "max": 2.438
+    },
+    "height": {
+      "min": 2.791,
+      "max": 2.791
+    },
+    "length": {
+      "min": 2.991,
+      "max": 9.125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 2.5,
+      "unit": "kN/m²",
+      "loadDistribution": "Uniform"
+    },
+    "seismicResistance": "",
+    "windLoadResistance": "100 km/h"
+  },
+  "performance": {
+    "resistanceToFireClassification": "A1",
+    "thermalTransmittance": 0,
+    "acousticProperties": {
+      "soundInsulationRating": "",
+      "acousticPerformance": ""
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "",
+    "classification": "",
+    "VOCEmissions": "",
+    "recyclability": "",
+    "energyEfficiency": ""
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "ISO-Norm for corners. Fire resistance classification A1.",
+    "certifications": {
+      "certificationTypes": [],
+      "regulatoryApprovals": []
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Welded",
+    "installationTime": "",
+    "compatibility": ""
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "",
+    "maintenanceRequirements": "Customer is responsible for clearing snow from the roof in the event of excessive snow buildup",
+    "warranty": ""
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": [
+      "RAL 9002"
+    ],
+    "texture": "",
+    "modularAdaptability": ""
+  },
+  "economicFactors": {
+    "costPerUnit": 0,
+    "manufacturingLeadTime": ""
+  }
+}
