@@ -9,10 +9,10 @@ export async function Header() {
         </Link>
         <Stack direction="row" spacing={2}>
 
-          <Link href="/experts" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+          <Link href="/" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
             Document
           </Link>
-          <Link href="/apps" className="font-small" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+          <Link href="/three" className="font-small" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
             3D model
           </Link>
         </Stack>
