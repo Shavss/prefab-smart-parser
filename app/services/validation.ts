@@ -1,4 +1,5 @@
 import { PrefabElement, PrefabElementSchema } from "@mod-construction/mod-dlm";
+import testData from '../../assets/test_langchain.json';
 
 const examplePrefabElement: PrefabElement = {
     id: '8be9e7b3-de6c-4621-8751-3a1b12d71f94',
@@ -85,35 +86,66 @@ const examplePrefabElement: PrefabElement = {
     }
 };
 
-export function validatePrefabElement(input: unknown): { 
+// export function validatePrefabElement(input: unknown): { 
+//     success: boolean; 
+//     data?: PrefabElement; 
+//     error?: any; 
+// } {
+//     // Type assertion of the input as PrefabElement
+//     const prefabElement = input as PrefabElement;
+    
+//     // Validate using the schema
+//     const validation = PrefabElementSchema.safeParse(prefabElement);
+    
+//     if (validation.success) {
+//         return {
+//             success: true,
+//             data: validation.data
+//         };
+//     } else {
+//         return {
+//             success: false,
+//             error: validation.error
+//         };
+//     }
+// }
+
+// ... existing imports ...
+
+// Update the validation function to use test data
+export function validatePrefabElement(): { 
     success: boolean; 
     data?: PrefabElement; 
     error?: any; 
 } {
-    // Type assertion of the input as PrefabElement
-    const prefabElement = input as PrefabElement;
-    
-    // Validate using the schema
-    const validation = PrefabElementSchema.safeParse(prefabElement);
-    
-    if (validation.success) {
-        return {
-            success: true,
-            data: validation.data
-        };
-    } else {
+    try {
+        // Use the example data that's already defined
+        const validation = PrefabElementSchema.safeParse(testData);
+        
+        if (validation.success) {
+            return {
+                success: true,
+                data: validation.data
+            };
+        } else {
+            return {
+                success: false,
+                error: validation.error
+            };
+        }
+    } catch (error) {
         return {
             success: false,
-            error: validation.error
+            error: error
         };
     }
 }
 
-// Validate the element using the PrefabElementSchema
-const validation = PrefabElementSchema.safeParse(examplePrefabElement);
+// // Validate the element using the PrefabElementSchema
+// const validation = PrefabElementSchema.safeParse(examplePrefabElement);
 
-if (validation.success) {
-   console.log('Element is valid:', validation.data);
-} else {
-   console.error('Element validation failed:', validation.error);
-}
+// if (validation.success) {
+//    console.log('Element is valid:', validation.data);
+// } else {
+//    console.error('Element validation failed:', validation.error);
+// }
