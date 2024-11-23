@@ -3,7 +3,9 @@
 import { Box,Button, Typography } from '@mui/material';
 import { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
-
+import { validatePrefabElement } from './services/validation';
+import type { ChangeEvent } from 'react';
+import { Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 
 export const maxDuration = 30;
 
@@ -18,7 +20,7 @@ export default function Home() {
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
@@ -41,6 +43,16 @@ export default function Home() {
     document.getElementById('fileInput')?.click();
   };
 
+  const handleValidation = () => {
+    const result = validatePrefabElement();
+    if (result.success) {
+      alert(`Validation successful: ${result.data}`);
+      // You might want to add some UI feedback here
+    } else {
+      alert(`Validation failed: ${result.error}`);
+    }
+  };
+
   if (loading) {
     return <LoadingScreen />; // Display the loading screen if loading is true
   }
@@ -61,9 +73,10 @@ export default function Home() {
       }}
     >
       <Typography variant="overline" sx={{ color:'black', marginBottom:'60px', width:'600px', textAlign:'center', lineHeight:'1.5'}}>Parser is the project created during Open source construction hackathon in Munich.</Typography>
+
       <input
-        type="file"
         id="fileInput"
+        type="file"
         accept=".pdf"
         style={{ display: 'none' }}
         onChange={handleFileChange}
@@ -75,12 +88,26 @@ export default function Home() {
           backgroundColor: 'black',
           color: 'white',
           borderRadius: '30px',
+          mb: 2
         }}
         onClick={handleButtonClick}
       >
         Upload PDF
       </Button>
       <Typography variant="caption" sx={{ color:'black', marginTop:'20px'}}>Uploaded pdf is processed using LLM and matched with the library of MOD componets</Typography>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={handleValidation}
+        sx={{
+          backgroundColor: 'black',
+          color: 'white',
+          borderRadius: '30px',
+          mb: 2  // Add margin bottom of 2 units (16px)
+        }}
+      >
+        Validate Test Data
+      </Button>
     </Box>
   );
 }
