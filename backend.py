@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
 import base64
+from flask_cors import CORS
 import os
 from llm import define_model, llm_stack, extract_text_from_pdf, split_into_sentences, create_overlapping_chunks
 
 app = Flask(__name__)
+CORS(app)
 
 def process_pdf_content(pdf_content):
     """
@@ -42,12 +44,15 @@ def process_pdf_endpoint():
     """
     try:
         data = request.json
-        if 'pdf_content' not in data:
+        if 'fileContent' not in data:
+            print('received data', data)
             return jsonify({"error": "Missing 'pdf_content' in the request"}), 400
 
-        pdf_content = data['pdf_content']
+        pdf_content = data['fileContent']
+        print("Pdf content here:", pdf_content )
         schema_outputs = process_pdf_content(pdf_content)
 
+        print("schema output content here:", schema_outputs)
         return jsonify(schema_outputs), 200
     except Exception as e:
         print(f"Error processing PDF request: {e}")
