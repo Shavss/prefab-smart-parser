@@ -93,9 +93,10 @@ if __name__ == "__main__":
     # Initialize the agent with OpenAI API key and output file path
     api_key = shh.OPENAI_API_KEY
     agent = LLMAgent(api_key=api_key, output_file="output.json")
+
     # Read markdown content
     markdown_file = "markup.md"
-    with open(markdown_file, "r") as f:
+    with open(markdown_file, "r", encoding="utf-8") as f:
         markdown_content = f.read()
 
     # Populate, validate, and save the schema
