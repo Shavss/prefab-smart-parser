@@ -90,8 +90,7 @@ class LLMAgent:
 
 if __name__ == "__main__":
     # Initialize the agent with OpenAI API key and output file path
-    api_key = "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"
-    agent = LLMAgent(api_key=api_key, output_file="output.json")
+    api_key = ""
 
     # Read markdown content
     markdown_file = "markup.md"
