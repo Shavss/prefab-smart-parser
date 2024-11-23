@@ -32,6 +32,19 @@ class LLMAgent:
         )
 
         # Define the prompt template
+        # prompt = PromptTemplate(
+        #     template="""
+        #     You are given the following schema:
+        #     {schema}
+
+        #     From the provided markdown content:
+        #     {markdown}
+
+        #     Fill out the schema fields based on the markdown information. If any fields are missing, infer them logically, keeping the schema constraints in mind. Output the result strictly in JSON format matching the schema and put "unknown" for string fields, and for enum fields use the last of the available option, and for numerical fields put -1 if there is no information found.
+        #     """,
+        #     input_variables=["schema", "markdown"],
+        # )
+
         prompt = PromptTemplate(
             template="""
             You are given the following schema:
@@ -40,7 +53,7 @@ class LLMAgent:
             From the provided markdown content:
             {markdown}
 
-            Fill out the schema fields based on the markdown information. If any fields are missing, infer them logically, keeping the schema constraints in mind. Output the result strictly in JSON format matching the schema and leave blank if there is no information found.
+            Fill out the schema fields based on the markdown information. If any fields are missing, infer them logically, keeping the schema constraints in mind. Output the result strictly in JSON format matching the schema.
             """,
             input_variables=["schema", "markdown"],
         )
@@ -63,6 +76,8 @@ class LLMAgent:
         # Convert the PrefabElement schema to JSON for GPT-4
         prefab_schema = json.dumps(PrefabElement.model_json_schema())
 
+        validated_data={}
+
         try:
             # Fill missing schema data using GPT-4
             populated_data = self.fill_schema_with_openai(prefab_schema, markdown_content)
@@ -71,13 +86,17 @@ class LLMAgent:
             validated_data = PrefabElement(**populated_data)
 
             print("Validation successful!")
-            return validated_data.dict()
         except ValidationError as e:
             print("Validation Error:", e.json())
-            raise e
+           # raise e
+            pass        
         except Exception as e:
             print("Error during GPT-4 processing:", e)
-            raise e
+            #raise e
+            pass
+
+        return validated_data.dict()
+       
 
     def save_json_to_file(self, data: dict):
         """

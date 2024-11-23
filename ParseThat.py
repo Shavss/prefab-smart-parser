@@ -39,11 +39,17 @@ class ParseThat:
             json_data = self.llm_agent.populate_and_validate_schema(markdown_content)
             self.llm_agent.save_json_to_file(json_data)
             print(f"JSON output saved at: {output_json_path}")
+            return json_data
         except Exception as e:
             print(f"An error occurred during JSON generation: {e}")
 
-if __name__ == "__main__":
+def wrapper(pdf_fp):
     # Example usage
-    pdf_file_path = "LORENZ_Datenblatt_DD18_45_2210.pdf"  # Replace with the actual path to the PDF
+    pdf_file_path = pdf_fp # Replace with the actual path to the PDF
     parser = ParseThat()
-    parser.process_pdf(pdf_file_path)
+    response= parser.process_pdf(pdf_file_path)
+    print(response)
+    return response
+
+if __name__ == "__main__":
+    wrapper("LORENZ_Datenblatt_DD18_60_2210.pdf")

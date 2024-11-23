@@ -158,10 +158,10 @@ class Dimensional(BaseModel):
     length: DimensionalRange
 
 
-class StructuralProperties(BaseModel):
-    loadBearingCapacity: Optional[dict] = None
-    seismicResistance: Optional[SeismicResistance] = None
-    windLoadResistance: Optional[WindLoadResistance] = None
+# class StructuralProperties(BaseModel):
+#     loadBearingCapacity: Optional[dict] = None
+#     seismicResistance: Optional[SeismicResistance] = None
+#     windLoadResistance: Optional[WindLoadResistance] = None
 
 
 class AcousticProperties(BaseModel):
@@ -208,7 +208,7 @@ class PrefabElement(BaseModel):
     productCategory: ProductCategory
     material: Material
     dimensional: Dimensional
-    structuralProperties: Optional[StructuralProperties] = None
+    # structuralProperties: Optional[StructuralProperties] = None
     performance: Performance
     sustainability: Sustainability
     documentationAndCompliance: DocumentationAndCompliance
