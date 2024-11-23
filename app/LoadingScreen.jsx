@@ -35,7 +35,7 @@ const LoadingScreen = () => {
           },
         }}
       >
-        PDF parser
+        Parser
       </Typography>
     </Box>
   );
