@@ -10,10 +10,10 @@ export async function Header() {
         <Stack direction="row" spacing={2}>
 
           <Link href="/experts" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            PDF
+            Document
           </Link>
           <Link href="/apps" className="font-small" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            BIM
+            3D model
           </Link>
         </Stack>
         <Box sx={{width:'20px',height:'20px',color:'white', border:'2px solid black', borderRadius:'2px'}}/>

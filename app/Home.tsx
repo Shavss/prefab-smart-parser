@@ -1,6 +1,6 @@
 'use client';
 
-import { Box,Button,} from '@mui/material';
+import { Box,Button, Typography } from '@mui/material';
 import { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 
@@ -33,8 +33,11 @@ export default function Home() {
         justifyContent: 'center',
         backgroundColor: 'white',
         minHeight: '90dvh',
+        backgroundImage: 'radial-gradient(lightgray 1px, transparent 1px)',
+        backgroundSize: '30px 30px',
       }}
     >
+      <Typography variant="overline" sx={{ color:'black', marginBottom:'60px', width:'600px', textAlign:'center', lineHeight:'1.5'}}>Parser is the project created during Open source construction hackathon in Munich.</Typography>
       <Button
         variant="contained"
         color="primary"
@@ -46,6 +49,7 @@ export default function Home() {
       >
         Upload PDF
       </Button>
+      <Typography variant="caption" sx={{ color:'black', marginTop:'20px'}}>Uploaded pdf is processed using LLM and matched with the library of MOD componets</Typography>
     </Box>
   );
 }
