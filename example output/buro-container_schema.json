@@ -1,17 +1,17 @@
 {
-  "id": "V2.0/2022",
-  "name": "BÜRO-CONTAINER V2.0 / 2022",
-  "description": "Office container with various aspects including roof, floor, wall panels, pillars, and doors.",
+  "id": "Buro-ContainerV2.0/2022",
+  "name": "Buro-Container",
+  "description": "A standardized container designed to provide an office space. It is fabricated using cold-rolled steel profiles and conforming to ISO Norm dimensions, with insulation options like mineral wool or polyurethane foam",
   "boundingBox": {
-    "width": 0,
-    "height": 0,
-    "depth": 0
+    "width": 2.438,
+    "height": 2.791,
+    "depth": 7.335
   },
   "images": [],
   "buildingSystem": "Modular",
-  "productCategory": "Containers",
+  "productCategory": "Workplace Products",
   "material": {
-    "finishMaterial": "Steel",
+    "finishMaterial": "Cold-rolled steel profile, 3 mm strong, welded",
     "structuralMaterial": "Steel"
   },
   "dimensional": {
@@ -30,54 +30,54 @@
   },
   "structuralProperties": {
     "loadBearingCapacity": {
-      "maximumLoad": 2.5,
-      "unit": "kN/m²",
-      "loadDistribution": "Uniform"
+      "maximumLoad": 1800,
+      "unit": "kg",
+      "loadDistribution": "Each pillar"
     },
-    "seismicResistance": "",
-    "windLoadResistance": "100 km/h"
+    "seismicResistance": "N/A",
+    "windLoadResistance": "up to 100km/h"
   },
   "performance": {
     "resistanceToFireClassification": "A1",
-    "thermalTransmittance": 0,
+    "thermalTransmittance": 0.34,
     "acousticProperties": {
-      "soundInsulationRating": "",
-      "acousticPerformance": ""
+      "soundInsulationRating": "N/A",
+      "acousticPerformance": "N/A"
     }
   },
   "sustainability": {
-    "countryOfManufacturing": "",
-    "classification": "",
-    "VOCEmissions": "",
-    "recyclability": "",
-    "energyEfficiency": ""
+    "countryOfManufacturing": "N/A",
+    "classification": "N/A",
+    "VOCEmissions": "N/A",
+    "recyclability": "N/A",
+    "energyEfficiency": "N/A"
   },
   "documentationAndCompliance": {
-    "technicalSpecifications": "ISO-Norm for corners. Fire resistance classification A1.",
+    "technicalSpecifications": "ISO Norm size conforming container, Insulation values of U: 0.36 W/m²K, Wind resistance max 100km/h",
     "certifications": {
       "certificationTypes": [],
       "regulatoryApprovals": []
     }
   },
   "installationAndConnectivity": {
-    "connectionType": "Welded",
-    "installationTime": "",
-    "compatibility": ""
+    "connectionType": "Welded or screwed connection",
+    "installationTime": "N/A",
+    "compatibility": "N/A"
   },
   "lifecycleAndMaintenance": {
-    "expectedLifespan": "",
-    "maintenanceRequirements": "Customer is responsible for clearing snow from the roof in the event of excessive snow buildup",
-    "warranty": ""
+    "expectedLifespan": "N/A",
+    "maintenanceRequirements": "N/A",
+    "warranty": "N/A"
   },
   "aestheticAndCustomizationOptions": {
     "colorOptions": [
-      "RAL 9002"
+      "RAL 9002 Gray white"
     ],
-    "texture": "",
-    "modularAdaptability": ""
+    "texture": "N/A",
+    "modularAdaptability": "Yes"
   },
   "economicFactors": {
     "costPerUnit": 0,
-    "manufacturingLeadTime": ""
+    "manufacturingLeadTime": "N/A"
   }
 }
