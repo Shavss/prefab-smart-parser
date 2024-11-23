@@ -1,0 +1,81 @@
+{
+  "id": "06120",
+  "name": "Structural Insulated Panels",
+  "description": "Structural Insulated Panels (SIPs) are building materials used for constructing walls, ceilings, and floors. They are known for their durability, strength and insulation properties. Some preparation is required before installation, including the adjustment of the panels to accurate lengths, angles, and sizes, removal of foam to accommodate wooden blocking and splines, and provision for electrical wiring chases in the foam core. The installation process includes hoisting the panels in place, ensuring that they are installed plumb, square and true to line, and filling all panel joints with expanding urethane foam or sealing by another approved method. All damaged panels should be repaired or replaced, and debris should be disposed of following all legal regulations.",
+  "boundingBox": {
+    "width": 0,
+    "height": 0,
+    "depth": 0
+  },
+  "images": [],
+  "buildingSystem": "",
+  "productCategory": "",
+  "material": {
+    "finishMaterial": "",
+    "structuralMaterial": "Urethane foam"
+  },
+  "dimensional": {
+    "width": {
+      "min": 0,
+      "max": 0
+    },
+    "height": {
+      "min": 0,
+      "max": 0
+    },
+    "length": {
+      "min": 0,
+      "max": 0
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 0,
+      "unit": "",
+      "loadDistribution": ""
+    },
+    "seismicResistance": "",
+    "windLoadResistance": ""
+  },
+  "performance": {
+    "resistanceToFireClassification": "",
+    "thermalTransmittance": 0,
+    "acousticProperties": {
+      "soundInsulationRating": "",
+      "acousticPerformance": ""
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "",
+    "classification": "",
+    "VOCEmissions": "",
+    "recyclability": "",
+    "energyEfficiency": ""
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "",
+    "certifications": {
+      "certificationTypes": [],
+      "regulatoryApprovals": []
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Spline",
+    "installationTime": "",
+    "compatibility": ""
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "",
+    "maintenanceRequirements": "Repair or replace all damaged SIPs.",
+    "warranty": ""
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": [],
+    "texture": "",
+    "modularAdaptability": ""
+  },
+  "economicFactors": {
+    "costPerUnit": 0,
+    "manufacturingLeadTime": ""
+  }
+}
