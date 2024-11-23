@@ -26,7 +26,7 @@ sentences_list = split_into_sentences(pdf_text)
 for index, sentence in enumerate(sentences_list):
     print(f"Sentence {index}: {sentence}")
 
-def create_overlapping_chunks(sentences, chunk_size=10, overlap_size=3):
+def create_overlapping_chunks(sentences, chunk_size=30, overlap_size=3):
     chunks = []
     for i in range(0, len(sentences), chunk_size - overlap_size):
         chunk = sentences[i:i + chunk_size]
