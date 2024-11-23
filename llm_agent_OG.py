@@ -12,7 +12,7 @@ import os
 import secret as shh
 
 # Step 1: Set up OpenAI API key
-openai.api_key = shh.OPENAI_API_KEY
+
 
 # Step 2: Use ChatOpenAI with OpenAI API
 def fill_schema_with_openai(schema: str, markdown: str) -> dict:
