@@ -1,5 +1,5 @@
 const axios = require("axios");
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "YOUR_API_KEY";
 
 // Function to generate an embedding for a given text using OpenAI's API
 async function generateEmbedding(text) {
