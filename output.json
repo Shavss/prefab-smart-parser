@@ -1,0 +1,70 @@
+{
+  "name": "L\u00c3\u00bccking Ziegelelement",
+  "description": "L\u00c3\u00bccking Ziegelelemente sind ge schosshohe, tragende Mauer tafeln aus L\u00c3\u00bccking Plan ziegeln, die werksseitig komplett als fertige Wand inklusive verschiedener Ein bau teile vorgefertigt werden. Sie bieten sich f\u00c3\u00bcr tragende Au\u00c3\u0178en- und Innen w\u00c3\u00a4nde an, bei denen gro\u00c3\u0178e Wand fl\u00c3\u00a4chen schnell und effizient errichtet werden sollen.",
+  "boundingBox": {
+    "width": 7.0,
+    "height": 3.25,
+    "depth": 0.5
+  },
+  "images": [
+    "0_Image_0.Png",
+    "0_image_1.png",
+    "1_Image_0.Png",
+    "1_Image_1.Png",
+    "2_image_0.png",
+    "3_Image_0.Png",
+    "3_image_1.png",
+    "4_Image_0.Png",
+    "4_image_1.png"
+  ],
+  "buildingSystem": "Wall",
+  "productCategory": "Solid Wall Panels",
+  "material": {
+    "finishMaterial": "Other",
+    "structuralMaterial": "Other"
+  },
+  "dimensional": {
+    "width": {
+      "min": 7.0,
+      "max": 7.0
+    },
+    "height": {
+      "min": 3.25,
+      "max": 3.25
+    },
+    "length": {
+      "min": 0.5,
+      "max": 0.5
+    }
+  },
+  "structuralProperties": null,
+  "performance": {
+    "resistanceToFireClassification": "A1",
+    "thermalTransmittance": 0.23,
+    "acousticProperties": {
+      "soundInsulationRating": "High",
+      "acousticPerformance": "High"
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "Germany",
+    "classification": "A+",
+    "VOCEmissions": "None",
+    "recyclability": "100%",
+    "energyEfficiency": "LEED Platinum"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "Technische Daten",
+    "certifications": {
+      "certificationTypes": [
+        "allgemein bauaufsichtliche Zulassung 17.1-1190"
+      ],
+      "regulatoryApprovals": []
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Mortar",
+    "installationTime": "Fast",
+    "compatibility": "Concrete Structure"
+  }
+}
