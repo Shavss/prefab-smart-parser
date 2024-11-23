@@ -4,6 +4,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_community.chat_models import ChatOpenAI
 from pydantic import ValidationError
+import secret as shh
 
 class LLMAgent:
     def __init__(self, api_key: str, output_file: str = "output.json"):
@@ -90,8 +91,8 @@ class LLMAgent:
 
 if __name__ == "__main__":
     # Initialize the agent with OpenAI API key and output file path
-    api_key = ""
-
+    api_key = shh.OPENAI_API_KEY
+    agent = LLMAgent(api_key=api_key, output_file="output.json")
     # Read markdown content
     markdown_file = "markup.md"
     with open(markdown_file, "r") as f:

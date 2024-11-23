@@ -1,2 +1,0 @@
-import os
-os.environ["OPENAI_API_KEY"] = "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"

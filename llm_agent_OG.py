@@ -9,10 +9,10 @@ from mod_dlm_schema import PrefabElement  # Your custom schema
 from pydantic import ValidationError
 import json
 import os
+import secret as shh
 
-os.environ["OPENAI_API_KEY"] = "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"
 # Step 1: Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = shh.OPENAI_API_KEY
 
 # Step 2: Use ChatOpenAI with OpenAI API
 def fill_schema_with_openai(schema: str, markdown: str) -> dict:
