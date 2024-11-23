@@ -2,14 +2,14 @@
 
 import { Box,Button, Typography, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import { useState, useEffect } from 'react';
-import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
+// import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 import { validatePrefabElement } from './services/validation';
 import type { ChangeEvent } from 'react';
 
 export const maxDuration = 30;
 
 export default function Home() {
-  const [loading, setLoading] = useState<boolean>(true); // Loading state
+  // const [loading, setLoading] = useState<boolean>(true); // Loading state
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [dialogMessage, setDialogMessage] = useState<string>('');
 
@@ -25,10 +25,26 @@ export default function Home() {
     const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
-
       reader.onload = () => {
         const fileContent = reader.result;
-        console.log('Encoded file content:', fileContent);
+        console.log('Encoded file content:',  JSON.stringify({ 'pdf_content':fileContent }));
+        // Send the file content to the server
+        fetch('http://127.0.0.1:8080/process_pdf', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ fileContent }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Server response:', data);
+        })
+        .catch(error => {
+          console.error('Error sending file:', error);
+          setDialogMessage('Error sending file to server');
+          setDialogOpen(true);
+        });
         // You can now use the encoded file content as needed
       };
 
@@ -58,9 +74,9 @@ export default function Home() {
     setDialogOpen(false);
   };
 
-  if (loading) {
-    return <LoadingScreen message={'Parser'}/>; // Display the loading screen if loading is true
-  }
+  // if (loading) {
+  //   return <LoadingScreen message={'Parser'}/>; // Display the loading screen if loading is true
+  // }
 
   return (
     <Box
