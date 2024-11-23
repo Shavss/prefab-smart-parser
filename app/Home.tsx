@@ -18,6 +18,29 @@ export default function Home() {
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        const fileContent = reader.result;
+        console.log('Encoded file content:', fileContent);
+        // You can now use the encoded file content as needed
+      };
+
+      reader.onerror = (error) => {
+        console.error('Error reading file:', error);
+      };
+
+      reader.readAsDataURL(file); // This will encode the file as a base64 string
+    }
+  };
+
+  const handleButtonClick = () => {
+    document.getElementById('fileInput')?.click();
+  };
+
   if (loading) {
     return <LoadingScreen />; // Display the loading screen if loading is true
   }
@@ -38,6 +61,13 @@ export default function Home() {
       }}
     >
       <Typography variant="overline" sx={{ color:'black', marginBottom:'60px', width:'600px', textAlign:'center', lineHeight:'1.5'}}>Parser is the project created during Open source construction hackathon in Munich.</Typography>
+      <input
+        type="file"
+        id="fileInput"
+        accept=".pdf"
+        style={{ display: 'none' }}
+        onChange={handleFileChange}
+      />
       <Button
         variant="contained"
         color="primary"
@@ -46,6 +76,7 @@ export default function Home() {
           color: 'white',
           borderRadius: '30px',
         }}
+        onClick={handleButtonClick}
       >
         Upload PDF
       </Button>
