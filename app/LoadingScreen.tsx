@@ -1,7 +1,12 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
 
-const LoadingScreen = () => {
+// Define the LoadingScreenProps type
+type LoadingScreenProps = {
+  message: string;
+};
+
+const LoadingScreen: React.FC<LoadingScreenProps> = ({ message }) => {
   const theme = useTheme();
 
   return (
@@ -35,7 +40,7 @@ const LoadingScreen = () => {
           },
         }}
       >
-        Parser
+        {message}
       </Typography>
     </Box>
   );

@@ -1,16 +1,17 @@
 'use client';
 
-import { Box,Button, Typography } from '@mui/material';
+import { Box,Button, Typography, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 import { validatePrefabElement } from './services/validation';
 import type { ChangeEvent } from 'react';
-import { Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 
 export const maxDuration = 30;
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true); // Loading state
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+  const [dialogMessage, setDialogMessage] = useState<string>('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,15 +47,19 @@ export default function Home() {
   const handleValidation = () => {
     const result = validatePrefabElement();
     if (result.success) {
-      alert(`Validation successful: ${result.data}`);
-      // You might want to add some UI feedback here
+      setDialogMessage(`Validation successful: ${result.data}`);
     } else {
-      alert(`Validation failed: ${result.error}`);
+      setDialogMessage(`Validation failed: ${result.error}`);
     }
+    setDialogOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setDialogOpen(false);
   };
 
   if (loading) {
-    return <LoadingScreen />; // Display the loading screen if loading is true
+    return <LoadingScreen message={'Parser'}/>; // Display the loading screen if loading is true
   }
 
   return (
@@ -94,7 +99,7 @@ export default function Home() {
       >
         Upload PDF
       </Button>
-      <Typography variant="caption" sx={{ color:'black', marginTop:'20px'}}>Uploaded pdf is processed using LLM and matched with the library of MOD componets</Typography>
+      <Typography variant="caption" sx={{ color:'black', marginTop:'0px'}}>Uploaded pdf is processed using LLM and matched with the library of MOD componets</Typography>
       <Button
         variant="contained"
         color="primary"
@@ -103,11 +108,36 @@ export default function Home() {
           backgroundColor: 'black',
           color: 'white',
           borderRadius: '30px',
+          marginTop:'60px',
           mb: 2  // Add margin bottom of 2 units (16px)
         }}
       >
-        Validate Test Data
+        Validate
       </Button>
+
+      <Dialog open={dialogOpen} onClose={handleCloseDialog}>
+        <DialogTitle sx={{ textAlign: 'center' }}><Typography variant="body1">Result</Typography></DialogTitle>
+        <DialogContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Typography sx={{ textAlign: 'center' }}>{dialogMessage}</Typography>
+        </DialogContent>
+        <DialogActions sx={{ justifyContent: 'center', marginBottom:'10px' }}>
+          <Button
+            size='small'
+            onClick={handleCloseDialog}
+            sx={{
+              backgroundColor: 'black',
+              color: 'white',
+              borderRadius: '20px',
+              pddingBottom: '20px',
+              '&:hover': {
+                backgroundColor: 'darkgray',
+              },
+            }}
+          >
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }
