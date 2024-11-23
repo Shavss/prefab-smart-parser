@@ -4,7 +4,7 @@ const { OpenAI } = require("openai");
 const { generateEmbedding, cosineSimilarity } = require("./embedding_utils");
 const examplePrefabElement = require("./schema");
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "YOUR_API_KEY";
 
 const openai = new OpenAI({
   apiKey: OPENAI_API_KEY,
