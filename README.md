@@ -33,9 +33,4 @@ This project provides a complete solution to upload multiple PDF files, visualiz
 - **npm** or **yarn**
 - OpenAI API Key (requires a valid API key from [OpenAI](https://platform.openai.com/))
   
-### **Backend Setup**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/pdf-extractor.git
-   cd pdf-extractor
 
