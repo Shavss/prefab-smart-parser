@@ -1,24 +1,24 @@
 [
     {
-        "id": "f9771574-9111-44d4-bf19-ad3ebaa48a96",
-        "name": "Insulated Concrete Wall Panel",
-        "description": "The text describes a high-performance insulated concrete wall panel suitable for residential and commercial buildings.",
+        "id": "ee2bd73c-7af4-4077-b84e-f05bf64e8544",
+        "name": "Doppelwand Element",
+        "description": "The text describes solid wall panels made of reinforced concrete with specific dimensions.",
         "boundingBox": {
-            "width": 3000,
-            "height": 6000,
-            "depth": 200
+            "width": 1234,
+            "height": 9000,
+            "depth": 500
         },
         "images": [],
         "buildingSystem": "Wall",
-        "productCategory": "Insulated Concrete Panels",
+        "productCategory": "Solid Wall Panels",
         "material": {
             "finishMaterial": "Concrete",
             "structuralMaterial": "Concrete"
         },
         "dimensional": {
             "width": {
-                "min": 1000,
-                "max": 4000
+                "min": 180,
+                "max": 400
             },
             "height": {
                 "min": 0,
@@ -31,40 +31,34 @@
         },
         "structuralProperties": {
             "loadBearingCapacity": {
-                "maximumLoad": 5000,
-                "unit": "kN",
-                "loadDistribution": "Uniform"
+                "maximumLoad": 250,
+                "unit": "kg",
+                "loadDistribution": "None"
             }
         },
         "performance": {
-            "resistanceToFireClassification": "A2",
-            "thermalTransmittance": 0.25,
+            "resistanceToFireClassification": "None",
+            "thermalTransmittance": "None",
             "acousticProperties": {
-                "soundInsulationRating": "Rw 55 dB",
-                "acousticPerformance": "High"
+                "soundInsulationRating": "High",
+                "acousticPerformance": "High sound insulation"
             }
         },
         "sustainability": {
             "countryOfManufacturing": "Germany",
-            "classification": "A"
+            "classification": "None"
         },
         "documentationAndCompliance": {
-            "technicalSpecifications": "https://example.com/specifications/panel-001.pdf",
+            "technicalSpecifications": "None",
             "certifications": {
-                "certificationTypes": [
-                    "ISO 9001",
-                    "CE Marking"
-                ],
-                "regulatoryApprovals": [
-                    "EN 14992",
-                    "DIN 4102"
-                ]
+                "certificationTypes": [],
+                "regulatoryApprovals": []
             }
         },
         "lifecycleAndMaintenance": {
-            "expectedLifespan": "50 years",
-            "maintenanceRequirements": "Periodic inspection every 5 years",
-            "warranty": "10-year manufacturer warranty"
+            "expectedLifespan": "None",
+            "maintenanceRequirements": "Regular inspection and cleaning",
+            "warranty": "None"
         }
     }
 ]

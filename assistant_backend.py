@@ -4,25 +4,36 @@ import openai
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from openai import OpenAI
+from flask_cors import CORS
+
 # Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 app = Flask(__name__)
+CORS(app)
 client = OpenAI()
 assistant_id = None
 assistant_thread_id = None
 json_file_id=0
 pdf_file_id=0
+vector_Store_id=0
 vector_store = client.beta.vector_stores.create(name="Json Format")
+
 @app.route('/upload_json', methods=['POST'])
 def upload_json():
     json_file = request.files['json_file']
     json_path = os.path.join('uploads', json_file.filename)
     json_file.save(json_path)
+
     with open(json_path, "rb") as file_data:
         file = client.files.create(file=file_data, purpose="assistants")
+        file_batch = client.beta.vector_stores.file_batches.upload_and_poll(vector_store_id=vector_store.id, files=file)
         json_file_id=file.id
+        vector_Store_id=file_batch.id
+
     return jsonify({"message": "JSON file uploaded", "file_id": file.id})
+
+
 @app.route('/upload_pdf', methods=['POST'])
 def upload_pdf():
     pdf_file = request.files['pdf_file']
