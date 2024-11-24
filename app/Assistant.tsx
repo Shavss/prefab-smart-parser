@@ -14,7 +14,10 @@ export default function Assistant() {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [dialogMessage, setDialogMessage] = useState<string>('');
   const [serverResponse, setServerResponse] = useState<string>(''); // New state for server response
+  const [serverResponseJson, setServerResponseJson] = useState<string>(''); // New state for server response
   const [loading, setLoading] = useState<boolean>(false); // New state for loading
+
+  
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -41,7 +44,7 @@ export default function Assistant() {
       .then(response => response.json())
       .then(data => {
         console.log('Server response:', data);
-        setServerResponse(data); // Update state with server response
+        setServerResponseJson(data); // Update state with server response
       })
       .catch(error => {
         console.error('Error sending file:', error);
@@ -105,11 +108,30 @@ export default function Assistant() {
   };
 
   const handleJson = () => {
-    document.getElementById('fileInput')?.click();
+    document.getElementById('jsonInput')?.click();
   };
 
   const handleProcess = () => {
-    document.getElementById('fileInput')?.click();
+    fetch('http://127.0.0.1:8081/process', {
+      method: 'POST'
+    })
+
+    .then(response => response.json())
+      .then(data => {
+        console.log('Server response:', data);
+      })
+      .catch(error => {
+        console.error('Error sending file:', error);
+        setDialogMessage('Error sending file to server');
+        setDialogOpen(true);
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false when request completes
+      });
+
+
+
+
   };
 
   const handleValidation = (json: any) => {
@@ -158,6 +180,12 @@ export default function Assistant() {
             accept=".pdf"
             style={{ display: 'none' }}
             onChange={handleFileChange}
+          />
+          <input
+            id="jsonInput"
+            type="file"
+            style={{ display: 'none' }}
+            onChange={handleJsonChange}
           />
           <Stack direction="column" spacing={2}>
           <Button
