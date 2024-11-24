@@ -14,10 +14,11 @@ export default function Assistant() {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [dialogMessage, setDialogMessage] = useState<string>('');
   const [serverResponse, setServerResponse] = useState<string>(''); // New state for server response
+  const [serverResponsePdf, setServerResponsePdf] = useState<string>(''); // New state for server response
   const [serverResponseJson, setServerResponseJson] = useState<string>(''); // New state for server response
   const [loading, setLoading] = useState<boolean>(false); // New state for loading
 
-  
+
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -44,7 +45,7 @@ export default function Assistant() {
       .then(response => response.json())
       .then(data => {
         console.log('Server response:', data);
-        setServerResponseJson(data); // Update state with server response
+        //setServerResponseJson(data); // Update state with server response
       })
       .catch(error => {
         console.error('Error sending file:', error);
@@ -71,6 +72,8 @@ export default function Assistant() {
       const formData = new FormData();
       formData.append("pdf_file", file); // Match 'pdf_file' with Flask route
 
+      console.log(formData)
+
 
       setLoading(true); // Set loading to true when request starts
 
@@ -82,7 +85,7 @@ export default function Assistant() {
       .then(response => response.json())
       .then(data => {
         console.log('Server response:', data);
-        setServerResponse(data); // Update state with server response
+        //setServerResponsePdf(data); // Update state with server response
       })
       .catch(error => {
         console.error('Error sending file:', error);
@@ -118,7 +121,7 @@ export default function Assistant() {
 
     .then(response => response.json())
       .then(data => {
-        console.log('Server response:', data);
+        console.log('Process Server response:', data);
       })
       .catch(error => {
         console.error('Error sending file:', error);
