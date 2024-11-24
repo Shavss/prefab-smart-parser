@@ -1,6 +1,6 @@
 'use client';
 
-import { Box,Button, Typography, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { Box,Button, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Stack } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { useState } from 'react';
 // import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
@@ -9,7 +9,7 @@ import type { ChangeEvent } from 'react';
 
 export const maxDuration = 30;
 
-export default function Home() {
+export default function Assistant() {
   // const [loading, setLoading] = useState<boolean>(true); // Loading state
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [dialogMessage, setDialogMessage] = useState<string>('');
@@ -108,7 +108,7 @@ export default function Home() {
         {!serverResponse ? ( // Display initial content if no server response
         <Box sx={{ display: 'flex', flexDirection:'column', alignItems: 'center', mt: 2, width: '100%' }}>
           <Typography variant="overline" sx={{ color:'black', marginBottom:'60px', width:'600px', textAlign:'center', lineHeight:'1.5'}}>
-            Parser is the project created during Open source construction hackathon in Munich, using Langchain and LLM.
+            Parser is the project created during Open source construction hackathon in Munich, using OpenApi Assistant.
           </Typography>
           <input
             id="fileInput"
@@ -117,6 +117,7 @@ export default function Home() {
             style={{ display: 'none' }}
             onChange={handleFileChange}
           />
+          <Stack direction="column" spacing={2}>
           <Button
             variant="contained"
             color="primary"
@@ -130,6 +131,20 @@ export default function Home() {
           >
             Upload PDF
           </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              backgroundColor: 'black',
+              color: 'white',
+              borderRadius: '30px',
+              mb: 2
+            }}
+            onClick={handleButtonClick}
+          >
+            Upload Json
+          </Button>
+          </Stack>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2, width: '100%' }}>
             <Typography variant="caption" sx={{ color: 'black', marginTop: '0px' }}>
