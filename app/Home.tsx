@@ -145,10 +145,10 @@ export default function Home() {
         </Box>
         ) : ( // Display server response and validate button if response is received
           <Box sx={{ display: 'flex', flexDirection:'column', alignItems: 'center', mt: 2, width: '100%', borderRadius:'10px', p:2 }}>
-            <Box sx={{ height: '400px', overflow: 'auto', flexGrow: 1, border:'1px solid black', borderRadius:'10px', width:'80%' }}>
-              <Typography variant="body2" sx={{ color: 'black', textAlign: 'center', whiteSpace: 'pre-wrap' }}>
+            <Box sx={{ height: '400px', overflow: 'auto', flexGrow: 1, border:'1px solid black', borderRadius:'10px', width:'80%', color:'black' }}>
+              <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
                 {JSON.stringify(serverResponse, null, 2)}
-              </Typography>
+              </pre>
             </Box>
             <Button
               variant="contained"
