@@ -6,6 +6,7 @@ import { useState } from 'react';
 // import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 import { validatePrefabElement } from './services/validation';
 import type { ChangeEvent } from 'react';
+import CircularProgress from '@mui/material/CircularProgress'; // Import a loader component
 
 export const maxDuration = 30;
 
@@ -25,14 +26,13 @@ export default function Home() {
   // }, []);
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setLoading(true); // Set loading to true before processing
     const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = () => {
         const fileContent = reader.result;
         console.log('Encoded file content:',  JSON.stringify({ 'pdf_content':fileContent }));
-
-        setLoading(true); // Set loading to true when request starts
 
         // Send the file content to the server
         fetch('http://127.0.0.1:8080/process_pdf', {
@@ -63,6 +63,8 @@ export default function Home() {
       };
 
       reader.readAsDataURL(file); // This will encode the file as a base64 string
+    } else {
+      setLoading(false); // Ensure loading is false if no file is selected
     }
   };
 
@@ -116,6 +118,7 @@ export default function Home() {
             accept=".pdf"
             style={{ display: 'none' }}
             onChange={handleFileChange}
+            disabled={loading} // Optionally disable input while loading
           />
           <Button
             variant="contained"
@@ -130,6 +133,7 @@ export default function Home() {
           >
             Upload PDF
           </Button>
+          {loading && <CircularProgress />}
 
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2, width: '100%' }}>
             <Typography variant="caption" sx={{ color: 'black', marginTop: '0px' }}>
@@ -162,7 +166,7 @@ export default function Home() {
         )}
       </Box>
       <Box sx={{ height: '60px', marginTop: '60px' }}>
-        {loading && ( // Conditionally render the loading spinner
+        {loading && (
           <Button
             variant="contained"
             color="primary"
