@@ -1,0 +1,196 @@
+{
+    "files": [
+        {
+            "fileID": "file-XiXdn2zjyCGPXuq1H2H5XX",
+            "fileName": "buro-container-1.json",
+            "data": {
+                "name": "Office Containers",
+                "description": "Office Containers by Conzept Container Modulbau & Handel GmbH",
+                "boundingBox": {
+                    "width": 2438,
+                    "height": 2791,
+                    "depth": 6058
+                },
+                "images": [],
+                "buildingSystem": "Modules",
+                "productCategory": "Volumetric module",
+                "material": {
+                    "finishMaterial": "Steel",
+                    "structuralMaterial": "Steel"
+                },
+                "dimensional": {
+                    "width": {
+                        "min": 2438,
+                        "max": 2438
+                    },
+                    "height": {
+                        "min": 2791,
+                        "max": 2791
+                    },
+                    "length": {
+                        "min": 2991,
+                        "max": 9125
+                    }
+                },
+                "structuralProperties": {
+                    "loadBearingCapacity": {
+                        "maximumLoad": 2.5,
+                        "unit": "kN",
+                        "loadDistribution": "Floor load capacity"
+                    },
+                    "windLoadResistance": "Class B"
+                },
+                "performance": {
+                    "resistanceToFireClassification": "A1",
+                    "thermalTransmittance": 0.36
+                },
+                "installationAndConnectivity": {
+                    "connectionType": "Bolt-on",
+                    "compatibility": "Steel Frame"
+                },
+                "lifecycleAndMaintenance": {
+                    "maintenanceRequirements": "Regular inspection of seals and connections"
+                },
+                "aestheticAndCustomizationOptions": {
+                    "modularAdaptability": "Stackable up to 3 units"
+                }
+            }
+        },
+        {
+            "fileID": "file-XUXpmNQ2xVQBjkGk1ZumBb",
+            "fileName": "tableextraction_strarting_point_Specificationpdf.pdf",
+            "data": {
+                "version": "2.0",
+                "year": 2022,
+                "description": "Technical specifications for office containers",
+                "constructionDetails": {
+                    "roof": {
+                        "frame": {
+                            "material": "Cold-rolled steel profiles",
+                            "thickness": "3 mm",
+                            "type": "Welded"
+                        },
+                        "covering": {
+                            "material": "Galvanized and coated steel sheet",
+                            "thickness": "0.55 mm"
+                        },
+                        "insulation": {
+                            "material": "Mineral wool",
+                            "thickness": "100 mm",
+                            "classification": "A1, non-combustible"
+                        },
+                        "thermalInsulation": "0.36 W/m\u00b2K",
+                        "color": "RAL 9002"
+                    },
+                    "floor": {
+                        "frame": {
+                            "material": "Cold-rolled steel profiles",
+                            "thickness": "3 mm",
+                            "type": "Welded"
+                        },
+                        "undercarriage": {
+                            "material": "Galvanized and coated sheet",
+                            "thickness": "0.75 mm"
+                        },
+                        "dimensionsAndWeights": [
+                            {
+                                "type": "10'",
+                                "external": {
+                                    "length": 2991,
+                                    "width": 2438,
+                                    "height": 2791
+                                },
+                                "internal": {
+                                    "length": 2820,
+                                    "width": 2267,
+                                    "height": 2500
+                                },
+                                "area": 6.4,
+                                "weight": 1225
+                            },
+                            {
+                                "type": "16'",
+                                "external": {
+                                    "length": 4886,
+                                    "width": 2438,
+                                    "height": 2791
+                                },
+                                "internal": {
+                                    "length": 4715,
+                                    "width": 2267,
+                                    "height": 2500
+                                },
+                                "area": 10.7,
+                                "weight": 1650
+                            },
+                            {
+                                "type": "20'",
+                                "external": {
+                                    "length": 6058,
+                                    "width": 2438,
+                                    "height": 2791
+                                },
+                                "internal": {
+                                    "length": 5887,
+                                    "width": 2267,
+                                    "height": 2500
+                                },
+                                "area": 13.4,
+                                "weight": 1850
+                            }
+                        ]
+                    },
+                    "panels": {
+                        "options": {
+                            "external": {
+                                "material": "Galvanized and coated steel sheet",
+                                "thickness": "0.55 mm"
+                            },
+                            "insulation": [
+                                {
+                                    "material": "PUR Polyurethane foam",
+                                    "standardThickness": 50,
+                                    "uValue": "0.42 W/m\u00b2K"
+                                },
+                                {
+                                    "material": "Mineral wool",
+                                    "standardThickness": 60,
+                                    "uValue": "0.62 W/m\u00b2K"
+                                }
+                            ]
+                        }
+                    },
+                    "structuralColumns": {
+                        "material": "Cold-rolled steel profiles",
+                        "thickness": "3 mm",
+                        "insulation": "Pressed stone wool plates, A1 classification"
+                    },
+                    "loadCapacity": {
+                        "standard": "2.5 kN/m\u00b2",
+                        "snowLoad": "1.5 kN/m\u00b2",
+                        "windResistance": "Max. 100 km/h"
+                    },
+                    "doors": {
+                        "type": "Single-leaf steel door",
+                        "dimensions": {
+                            "width": 820,
+                            "height": 2000
+                        },
+                        "insulation": {
+                            "thickness": "40 mm",
+                            "uValue": "\u2265 1.7 W/m\u00b2K"
+                        }
+                    },
+                    "windows": {
+                        "type": "PVC frame",
+                        "dimensions": {
+                            "width": 790,
+                            "height": 1000
+                        },
+                        "thermalInsulation": "Uw = 1.6 W/m\u00b2K"
+                    }
+                }
+            }
+        }
+    ]
+}

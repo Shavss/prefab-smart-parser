@@ -1,0 +1,81 @@
+{
+  "id": "06121",
+  "name": "Office Container",
+  "description": "Prefabricated modular office container with steel frame construction, insulated walls, roof and floor panels. Features integrated electrical installation, windows, and doors.",
+  "boundingBox": {
+    "width": 2438,
+    "height": 2791,
+    "depth": 6058
+  },
+  "images": [],
+  "buildingSystem": "Modular Container",
+  "productCategory": "Prefabricated Building Units",
+  "material": {
+    "finishMaterial": "Galvanized and coated steel sheet",
+    "structuralMaterial": "Cold-rolled steel profiles"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2438,
+      "max": 2438
+    },
+    "height": {
+      "min": 2791,
+      "max": 2791
+    },
+    "length": {
+      "min": 2991,
+      "max": 9125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 2.5,
+      "unit": "kN/m²",
+      "loadDistribution": "Standard floor load"
+    },
+    "seismicResistance": "",
+    "windLoadResistance": "100 km/h"
+  },
+  "performance": {
+    "resistanceToFireClassification": "A1 (mineral wool insulation)",
+    "thermalTransmittance": 0.36,
+    "acousticProperties": {
+      "soundInsulationRating": "",
+      "acousticPerformance": ""
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "Austria",
+    "classification": "",
+    "VOCEmissions": "",
+    "recyclability": "",
+    "energyEfficiency": "U-value: 0.36 W/m²K (roof), 0.34 W/m²K (floor)"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "CEE-norm and ÖVE/VDE guidelines for electrical installation",
+    "certifications": {
+      "certificationTypes": ["EN 14509:2007", "EN 13501-1"],
+      "regulatoryApprovals": []
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "CEE connection 5-pole, 32A, 400 AC",
+    "installationTime": "",
+    "compatibility": "Requires foundation points (6 pieces) or foundation strips"
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "",
+    "maintenanceRequirements": "Regular snow removal from roof when necessary",
+    "warranty": ""
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": ["RAL 9002 Grey-white", "Custom RAL colors available"],
+    "texture": "Slightly profiled exterior, smooth interior",
+    "modularAdaptability": "Can be stacked up to 3 units high"
+  },
+  "economicFactors": {
+    "costPerUnit": 0,
+    "manufacturingLeadTime": ""
+  }
+}
