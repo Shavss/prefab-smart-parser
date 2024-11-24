@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import base64
 from flask_cors import CORS
 import os
+import json
 from llm import define_model, llm_stack, extract_text_from_pdf, split_into_sentences, create_overlapping_chunks
 
 app = Flask(__name__)
@@ -56,6 +57,11 @@ def process_pdf_endpoint():
         #print("Pdf content here:", pdf_content )
         schema_outputs = process_pdf_content(pdf_content)
 
+        result_folder = "result"
+        os.makedirs(result_folder, exist_ok=True)  # Ensure the folder exists
+        result_file_path = os.path.join(result_folder, "output.json")
+        with open(result_file_path, "w") as result_file:
+            json.dump(schema_outputs, result_file, indent=4)
         print("schema output content here:", schema_outputs)
         return jsonify(schema_outputs), 200
     except Exception as e:

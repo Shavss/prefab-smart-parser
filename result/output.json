@@ -1,0 +1,64 @@
+[
+    {
+        "id": "3d8586f2-0067-4c6a-847d-c2cc13495445",
+        "name": "Fanger Elementtechnik AG",
+        "description": "The text mentions various building elements and systems offered by Fanger Elementtechnik AG.",
+        "boundingBox": {
+            "width": 0,
+            "height": "None",
+            "depth": 0
+        },
+        "images": [],
+        "buildingSystem": "Building System",
+        "productCategory": "Product Category",
+        "material": {
+            "finishMaterial": "Concrete",
+            "structuralMaterial": "Concrete"
+        },
+        "dimensional": {
+            "width": {
+                "min": 0,
+                "max": 0
+            },
+            "height": {
+                "min": 0,
+                "max": 0
+            },
+            "length": {
+                "min": 0,
+                "max": 0
+            }
+        },
+        "structuralProperties": {
+            "loadBearingCapacity": {
+                "maximumLoad": "None",
+                "unit": 0,
+                "loadDistribution": "None"
+            }
+        },
+        "performance": {
+            "resistanceToFireClassification": "None",
+            "thermalTransmittance": 0,
+            "acousticProperties": {
+                "soundInsulationRating": "None",
+                "acousticPerformance": "None"
+            }
+        },
+        "sustainability": {
+            "countryOfManufacturing": "None",
+            "classification": "None"
+        },
+        "documentationAndCompliance": {
+            "technicalSpecifications": "None",
+            "certifications": {
+                "certificationTypes": [],
+                "regulatoryApprovals": []
+            }
+        },
+        "lifecycleAndMaintenance": {
+            "expectedLifespan": "None",
+            "maintenanceRequirements": "None",
+            "warranty": "None"
+        }
+    }
+]

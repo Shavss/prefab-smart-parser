@@ -19,7 +19,7 @@ def test_process_pdf_endpoint():
     """
     
     url = "http://127.0.0.1:8080/process_pdf"  
-    pdf_file_path = "Data/PDFs/Balkon_DE.pdf"   
+    pdf_file_path = "Data/PDFs/351-05.01_Elementtechnik_E12.pdf"   
 
     pdf_content = encode_pdf_to_base64(pdf_file_path)
     if not pdf_content:

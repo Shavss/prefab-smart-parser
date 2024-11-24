@@ -18,7 +18,7 @@ def split_into_sentences(text):
     return sentence_list
 
 
-def create_overlapping_chunks(sentences, chunk_size=30, overlap_size=3):
+def create_overlapping_chunks(sentences, chunk_size=3000, overlap_size=3):
     chunks = []
     for i in range(0, len(sentences), chunk_size - overlap_size):
         chunk = sentences[i:i + chunk_size]

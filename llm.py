@@ -77,29 +77,35 @@ def map_llm_response_to_updated_schema(llm_response: dict) -> dict:
 
         # Populate boundingBox with values (keeping units)
         bounding_box = {
-            "width": llm_response.get("width", "0"), 
-            "height": llm_response.get("height", "0"), 
-            "length": llm_response.get("length", "0")
+            "width": llm_response.get("width", 0), 
+            "height": llm_response.get("height", 0), 
+            "length": llm_response.get("length", 0)
+        }
+        dimensional = {
+            "width": {"min":llm_response.get("min_width", 0),
+                      "max":llm_response.get("max_width", 0)}, 
+            "height": {"min":llm_response.get("min_height", 0),
+                      "max":llm_response.get("max_height", 0)}, 
+            "length": {"min":llm_response.get("min_heigt", 0),
+                      "max":llm_response.get("max_height", 0)}, 
         }
 
-        # Extract material as a nested object
         material = {
             "finishMaterial": llm_response.get("material", "Other"),
             "structuralMaterial": llm_response.get("material", "Other"),
         }
 
-        # Map other properties
         structural_properties = {
             "loadBearingCapacity": {
-                "maximumLoad": llm_response.get("maximum_load", None),
-                "unit": llm_response.get("load_unit", None),
-                "loadDistribution": llm_response.get("load_distribution", None),
+                "maximumLoad": llm_response.get("maximum_load", 0),
+                "unit": llm_response.get("load_unit", "None"),
+                "loadDistribution": llm_response.get("load_distribution", "None"),
             }
         }
 
         performance = {
             "resistanceToFireClassification": llm_response.get("resistance_to_fire_classification", None),
-            "thermalTransmittance": llm_response.get("thermal_transmittance", None),
+            "thermalTransmittance": llm_response.get("thermal_transmittance", 0),
             "acousticProperties": {
                 "soundInsulationRating": llm_response.get("sound_insulation_rating", None),
                 "acousticPerformance": llm_response.get("acoustic_performance", None),
@@ -125,7 +131,6 @@ def map_llm_response_to_updated_schema(llm_response: dict) -> dict:
             "warranty": llm_response.get("warranty", None),
         }
 
-        # Final structure aligned with schema
         schema_element = {
             "id": element_id,
             "name": name,
@@ -139,7 +144,7 @@ def map_llm_response_to_updated_schema(llm_response: dict) -> dict:
             "buildingSystem": llm_response.get("building_system", "Unknown"),
             "productCategory": llm_response.get("product_category", "Unknown"),
             "material": material,
-            "dimensional": bounding_box,
+            "dimensional": dimensional,
             "structuralProperties": structural_properties,
             "performance": performance,
             "sustainability": sustainability,
@@ -164,12 +169,18 @@ class ChooseType(BaseModel):
     height: str = Field(description="What is the height of the element?")
     width: int = Field(description="What is the  width of the element?")
     length: int = Field(description="What is the length of the element?")
+    maximum_height: int = Field(description="What is the maximum height of the element, as an integer value")
+    minimum_height: int = Field(description="What is the minimum height of the element, as an integer value")
+    max_width: int = Field(description="What is the maximum width of the element, as an integer value")
+    min_width: int = Field(description="What is the minimum width of the element, as an integer value")
+    max_length: int = Field(description="What is the maximum length of the element, as an integer value")
+    min_length: int = Field(description="What is the minimum length of the element, as an integer value")
     # New fields
-    maximum_load: str = Field(description="What is the maximum load-bearing capacity of the element?")
+    maximum_load: int = Field(description="What is the maximum load-bearing capacity of the element, as an integer value")
     load_unit: int = Field(description="What is the unit of the load-bearing capacity?")
     load_distribution: str = Field(description="Describe the load distribution of the element.")
     resistance_to_fire_classification: str = Field(description="What is the resistance to fire classification of the element?")
-    thermal_transmittance: str = Field(description="What is the thermal transmittance of the element?")
+    thermal_transmittance: int = Field(description="What is the thermal transmittance of the element as an integer value?")
     sound_insulation_rating: str = Field(description="What is the sound insulation rating of the element?")
     acoustic_performance: str = Field(description="Describe the acoustic performance of the element.")
     country_of_manufacturing: str = Field(description="Which country is the element manufactured in?")
@@ -272,6 +283,12 @@ def llm_stack(model, chunk):
         "height": 9000,
         "width": 1234,
         "length": 500,
+        "maximum height": "10 meter",
+        "minimum height": "1 meter",
+        "maximum width": "200 centimers",
+        "minimum width": "25 centimeters",
+        "maximum length": "150 centimetrs",
+        "minimum length": "10 centimers"
         "maximum load": "None",
         "load unit": 500,
         "load distribution": "None",
