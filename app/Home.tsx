@@ -133,7 +133,9 @@ export default function Home() {
           >
             Upload PDF
           </Button>
-          {loading && <CircularProgress />}
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2, width: '100%' }}>
+            {loading && <CircularProgress size={24} sx={{ color: 'black' }} thickness={6}/>}
+          </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2, width: '100%' }}>
             <Typography variant="caption" sx={{ color: 'black', marginTop: '0px' }}>
@@ -143,7 +145,7 @@ export default function Home() {
         </Box>
         ) : ( // Display server response and validate button if response is received
           <Box sx={{ display: 'flex', flexDirection:'column', alignItems: 'center', mt: 2, width: '100%', borderRadius:'10px', p:2 }}>
-            <Box sx={{ height: '400px', overflow: 'auto', flexGrow: 1, border:'1px solid black',  }}>
+            <Box sx={{ height: '400px', overflow: 'auto', flexGrow: 1, border:'1px solid black', borderRadius:'10px', width:'80%' }}>
               <Typography variant="body2" sx={{ color: 'black', textAlign: 'center', whiteSpace: 'pre-wrap' }}>
                 {JSON.stringify(serverResponse, null, 2)}
               </Typography>
@@ -156,6 +158,7 @@ export default function Home() {
                 backgroundColor: 'black',
                 color: 'white',
                 borderRadius: '30px',
+                marginTop: '20px',
                 mb: 2,  // Add margin bottom of 2 units (16px)
                 mr: 2   // Add margin right of 2 units (16px) for spacing
               }}
