@@ -30,7 +30,7 @@ export default function Assistant() {
       const formData = new FormData();
       formData.append("json_file", file); // Match 'pdf_file' with Flask route
 
-      
+
       setLoading(true); // Set loading to true when request starts
 
       // Send the file content to the server
@@ -68,7 +68,7 @@ export default function Assistant() {
       const formData = new FormData();
       formData.append("pdf_file", file); // Match 'pdf_file' with Flask route
 
-      
+
       setLoading(true); // Set loading to true when request starts
 
       // Send the file content to the server
@@ -100,7 +100,15 @@ export default function Assistant() {
     } */
   };
 
-  const handleButtonClick = () => {
+  const handlePDF = () => {
+    document.getElementById('fileInput')?.click();
+  };
+
+  const handleJson = () => {
+    document.getElementById('fileInput')?.click();
+  };
+
+  const handleProcess = () => {
     document.getElementById('fileInput')?.click();
   };
 
@@ -161,7 +169,7 @@ export default function Assistant() {
               borderRadius: '30px',
               mb: 2
             }}
-            onClick={handleButtonClick}
+            onClick={handlePDF}
           >
             Upload PDF
           </Button>
@@ -174,9 +182,22 @@ export default function Assistant() {
               borderRadius: '30px',
               mb: 2
             }}
-            onClick={handleButtonClick}
+            onClick={handleJson}
           >
             Upload Json
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              backgroundColor: 'black',
+              color: 'white',
+              borderRadius: '30px',
+              mb: 2
+            }}
+            onClick={handleProcess}
+          >
+            Process
           </Button>
           </Stack>
 
