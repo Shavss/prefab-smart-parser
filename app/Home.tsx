@@ -1,6 +1,7 @@
 'use client';
 
 import { Box,Button, Typography, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { useState } from 'react';
 // import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 import { validatePrefabElement } from './services/validation';
@@ -69,12 +70,13 @@ export default function Home() {
     document.getElementById('fileInput')?.click();
   };
 
-  const handleValidation = () => {
-    const result = validatePrefabElement();
+  const handleValidation = (json: any) => {
+    const result = validatePrefabElement(json);
     if (result.success) {
-      setDialogMessage(`Validation successful: ${result.data}\nServer Response: ${serverResponse}`); // Include server response
+      //console.log(result.data)
+      setDialogMessage(`Validation successful!`); // Include server response
     } else {
-      setDialogMessage(`Validation failed: ${result.error}\nServer Response: ${serverResponse}`); // Include server response
+      setDialogMessage(`Validation failed: ${result.error}`); // Include server response ? \nServer Response: ${serverResponse}
     }
     setDialogOpen(true);
   };
@@ -145,7 +147,7 @@ export default function Home() {
             <Button
               variant="contained"
               color="primary"
-              onClick={handleValidation}
+              onClick={() => handleValidation(serverResponse)}
               sx={{
                 backgroundColor: 'black',
                 color: 'white',
@@ -180,7 +182,14 @@ export default function Home() {
       <Dialog open={dialogOpen} onClose={handleCloseDialog}>
         <DialogTitle sx={{ textAlign: 'center' }}><Typography variant="body1">Result</Typography></DialogTitle>
         <DialogContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <Typography sx={{ textAlign: 'center' }}>{dialogMessage}</Typography>
+          {dialogMessage === 'Validation successful!' ? (
+            <>
+              <Typography sx={{ textAlign: 'center' }}>{dialogMessage}</Typography>
+              <ThumbUpIcon sx={{ color: 'success.main' }} />
+            </>
+          ) : (
+            <Typography sx={{ textAlign: 'center', whiteSpace: 'pre-line' }}>{dialogMessage}</Typography>
+          )}
         </DialogContent>
         <DialogActions sx={{ justifyContent: 'center', marginBottom:'10px' }}>
           <Button
