@@ -113,14 +113,17 @@ const examplePrefabElement: PrefabElement = {
 // ... existing imports ...
 
 // Update the validation function to use test data
-export function validatePrefabElement(): { 
+export function validatePrefabElement(json: any): { 
     success: boolean; 
     data?: PrefabElement; 
     error?: any; 
 } {
+    console.log(json)
+    const data = json[0]
     try {
         // Use the example data that's already defined
-        const validation = PrefabElementSchema.safeParse(testData);
+        //const validation = PrefabElementSchema.safeParse(examplePrefabElement);
+        const validation = PrefabElementSchema.safeParse(data);
         
         if (validation.success) {
             return {
