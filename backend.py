@@ -44,12 +44,16 @@ def process_pdf_endpoint():
     """
     try:
         data = request.json
+        file_content = data.get("fileContent", "")
+        if file_content.startswith("data:application/pdf;base64,"):
+            file_content = file_content.split(",", 1)[1]  # Remove the prefix
         if 'fileContent' not in data:
-            print('received data', data)
-            return jsonify({"error": "Missing 'pdf_content' in the request"}), 400
+            #print('received data', data)
+            return jsonify({"error": "Missing 'fileContent' in the request"}), 400
 
-        pdf_content = data['fileContent']
-        print("Pdf content here:", pdf_content )
+        pdf_content = file_content
+        print("First 100 characters of the encoded text: \n",pdf_content[:100])  
+        #print("Pdf content here:", pdf_content )
         schema_outputs = process_pdf_content(pdf_content)
 
         print("schema output content here:", schema_outputs)

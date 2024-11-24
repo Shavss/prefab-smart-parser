@@ -19,15 +19,15 @@ def test_process_pdf_endpoint():
     """
     
     url = "http://127.0.0.1:8080/process_pdf"  
-    pdf_file_path = "Data/PDFs/bele_doppelwand_2015.pdf"   
+    pdf_file_path = "Data/PDFs/Balkon_DE.pdf"   
 
     pdf_content = encode_pdf_to_base64(pdf_file_path)
     if not pdf_content:
         print("Failed to encode PDF file.")
         return
-
+    
     payload = {
-        "pdf_content": pdf_content
+        "fileContent": pdf_content
     }
 
     try:
