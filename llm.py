@@ -166,7 +166,7 @@ class ChooseType(BaseModel):
     product_category: str = Field(description="What kind of product category the element belongs to.")
     explanation: str = Field(description="The reason why you chose this specific product category.")
     material: str = Field(description="What kind of material the element is built from?")
-    height: str = Field(description="What is the height of the element?")
+    height: int = Field(description="What is the height of the element, as an integer value")
     width: int = Field(description="What is the  width of the element?")
     length: int = Field(description="What is the length of the element?")
     maximum_height: int = Field(description="What is the maximum height of the element, as an integer value")
@@ -177,7 +177,7 @@ class ChooseType(BaseModel):
     min_length: int = Field(description="What is the minimum length of the element, as an integer value")
     # New fields
     maximum_load: int = Field(description="What is the maximum load-bearing capacity of the element, as an integer value")
-    load_unit: int = Field(description="What is the unit of the load-bearing capacity?")
+    load_unit: str = Field(description="What is the unit of the load-bearing capacity, as unit in string")
     load_distribution: str = Field(description="Describe the load distribution of the element.")
     resistance_to_fire_classification: str = Field(description="What is the resistance to fire classification of the element?")
     thermal_transmittance: int = Field(description="What is the thermal transmittance of the element as an integer value?")
@@ -283,14 +283,14 @@ def llm_stack(model, chunk):
         "height": 9000,
         "width": 1234,
         "length": 500,
-        "maximum height": "10 meter",
-        "minimum height": "1 meter",
-        "maximum width": "200 centimers",
-        "minimum width": "25 centimeters",
-        "maximum length": "150 centimetrs",
-        "minimum length": "10 centimers"
-        "maximum load": "None",
-        "load unit": 500,
+        "maximum height": 1000,
+        "minimum height": 10,
+        "maximum width": 200,
+        "minimum width": 10,
+        "maximum length": 30,
+        "minimum length": 10,
+        "maximum load": 500,
+        "load unit": "kn",
         "load distribution": "None",
         "resistance to fire classification": "None",
         "thermal transmittance": "None",

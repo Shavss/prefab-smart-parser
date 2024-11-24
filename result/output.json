@@ -1,24 +1,24 @@
 [
     {
-        "id": "3d8586f2-0067-4c6a-847d-c2cc13495445",
-        "name": "Fanger Elementtechnik AG",
-        "description": "The text mentions various building elements and systems offered by Fanger Elementtechnik AG.",
+        "id": "f9771574-9111-44d4-bf19-ad3ebaa48a96",
+        "name": "Insulated Concrete Wall Panel",
+        "description": "The text describes a high-performance insulated concrete wall panel suitable for residential and commercial buildings.",
         "boundingBox": {
-            "width": 0,
-            "height": "None",
-            "depth": 0
+            "width": 3000,
+            "height": 6000,
+            "depth": 200
         },
         "images": [],
-        "buildingSystem": "Building System",
-        "productCategory": "Product Category",
+        "buildingSystem": "Wall",
+        "productCategory": "Insulated Concrete Panels",
         "material": {
             "finishMaterial": "Concrete",
             "structuralMaterial": "Concrete"
         },
         "dimensional": {
             "width": {
-                "min": 0,
-                "max": 0
+                "min": 1000,
+                "max": 4000
             },
             "height": {
                 "min": 0,
@@ -31,34 +31,40 @@
         },
         "structuralProperties": {
             "loadBearingCapacity": {
-                "maximumLoad": "None",
-                "unit": 0,
-                "loadDistribution": "None"
+                "maximumLoad": 5000,
+                "unit": "kN",
+                "loadDistribution": "Uniform"
             }
         },
         "performance": {
-            "resistanceToFireClassification": "None",
-            "thermalTransmittance": 0,
+            "resistanceToFireClassification": "A2",
+            "thermalTransmittance": 0.25,
             "acousticProperties": {
-                "soundInsulationRating": "None",
-                "acousticPerformance": "None"
+                "soundInsulationRating": "Rw 55 dB",
+                "acousticPerformance": "High"
             }
         },
         "sustainability": {
-            "countryOfManufacturing": "None",
-            "classification": "None"
+            "countryOfManufacturing": "Germany",
+            "classification": "A"
         },
         "documentationAndCompliance": {
-            "technicalSpecifications": "None",
+            "technicalSpecifications": "https://example.com/specifications/panel-001.pdf",
             "certifications": {
-                "certificationTypes": [],
-                "regulatoryApprovals": []
+                "certificationTypes": [
+                    "ISO 9001",
+                    "CE Marking"
+                ],
+                "regulatoryApprovals": [
+                    "EN 14992",
+                    "DIN 4102"
+                ]
             }
         },
         "lifecycleAndMaintenance": {
-            "expectedLifespan": "None",
-            "maintenanceRequirements": "None",
-            "warranty": "None"
+            "expectedLifespan": "50 years",
+            "maintenanceRequirements": "Periodic inspection every 5 years",
+            "warranty": "10-year manufacturer warranty"
         }
     }
 ]
