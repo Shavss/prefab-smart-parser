@@ -24,46 +24,80 @@ export default function Assistant() {
   //   return () => clearTimeout(timer); // Cleanup the timer on component unmount
   // }, []);
 
+  const handleJsonChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const formData = new FormData();
+      formData.append("json_file", file); // Match 'pdf_file' with Flask route
+
+      
+      setLoading(true); // Set loading to true when request starts
+
+      // Send the file content to the server
+      fetch('http://127.0.0.1:8081/upload_json', {
+        method: 'POST',
+        body: formData,
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Server response:', data);
+        setServerResponse(data); // Update state with server response
+      })
+      .catch(error => {
+        console.error('Error sending file:', error);
+        setDialogMessage('Error sending file to server');
+        setDialogOpen(true);
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false when request completes
+      });
+      // You can now use the encoded file content as needed
+    };
+
+    /* reader.onerror = (error) => {
+      console.error('Error reading file:', error);
+    };
+
+    reader.readAsDataURL(file); // This will encode the file as a base64 string
+    } */
+  };
+
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        const fileContent = reader.result;
-        console.log('Encoded file content:',  JSON.stringify({ 'pdf_content':fileContent }));
+      const formData = new FormData();
+      formData.append("pdf_file", file); // Match 'pdf_file' with Flask route
 
-        setLoading(true); // Set loading to true when request starts
+      
+      setLoading(true); // Set loading to true when request starts
 
-        // Send the file content to the server
-        fetch('http://127.0.0.1:8080/process_pdf', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ fileContent }),
-        })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Server response:', data);
-          setServerResponse(data); // Update state with server response
-        })
-        .catch(error => {
-          console.error('Error sending file:', error);
-          setDialogMessage('Error sending file to server');
-          setDialogOpen(true);
-        })
-        .finally(() => {
-          setLoading(false); // Set loading to false when request completes
-        });
-        // You can now use the encoded file content as needed
-      };
+      // Send the file content to the server
+      fetch('http://127.0.0.1:8081/upload_pdf', {
+        method: 'POST',
+        body: formData,
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Server response:', data);
+        setServerResponse(data); // Update state with server response
+      })
+      .catch(error => {
+        console.error('Error sending file:', error);
+        setDialogMessage('Error sending file to server');
+        setDialogOpen(true);
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false when request completes
+      });
+      // You can now use the encoded file content as needed
+    };
 
-      reader.onerror = (error) => {
-        console.error('Error reading file:', error);
-      };
+    /* reader.onerror = (error) => {
+      console.error('Error reading file:', error);
+    };
 
-      reader.readAsDataURL(file); // This will encode the file as a base64 string
-    }
+    reader.readAsDataURL(file); // This will encode the file as a base64 string
+    } */
   };
 
   const handleButtonClick = () => {
