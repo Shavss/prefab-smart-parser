@@ -1,0 +1,48 @@
+{
+  "name": "Modular Container Unit",
+  "description": "Standard modular container unit with steel frame construction and versatile functionality",
+  "boundingBox": {
+    "width": 2438,
+    "height": 2791,
+    "depth": 9125
+  },
+  "images": [],
+  "buildingSystem": "Modules",
+  "productCategory": "Volumetric module",
+  "material": {
+    "finishMaterial": "Steel",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2438,
+      "max": 2438
+    },
+    "height": {
+      "min": 2791,
+      "max": 2791
+    },
+    "length": {
+      "min": 2991,
+      "max": 9125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 2.5,
+      "unit": "kN",
+      "loadDistribution": "per square meter"
+    },
+    "windLoadResistance": "Class C"
+  },
+  "performance": {
+    "resistanceToFireClassification": "A1",
+    "thermalTransmittance": 0.36
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Bolt-on"
+  },
+  "lifecycleAndMaintenance": {
+    "maintenanceRequirements": "Regular inspection of insulation and electrical systems"
+  }
+}

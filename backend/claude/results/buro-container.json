@@ -1,0 +1,52 @@
+{
+  "name": "Office Containers",
+  "description": "Office Containers by Conzept Container Modulbau & Handel GmbH",
+  "boundingBox": {
+    "width": 2438,
+    "height": 2791,
+    "depth": 6058
+  },
+  "images": [],
+  "buildingSystem": "Modules",
+  "productCategory": "Volumetric module",
+  "material": {
+    "finishMaterial": "Steel",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2438,
+      "max": 2438
+    },
+    "height": {
+      "min": 2791,
+      "max": 2791
+    },
+    "length": {
+      "min": 2991,
+      "max": 9125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 2.5,
+      "unit": "kN",
+      "loadDistribution": "Floor load capacity"
+    },
+    "windLoadResistance": "Class B"
+  },
+  "performance": {
+    "resistanceToFireClassification": "A1",
+    "thermalTransmittance": 0.36
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Bolt-on",
+    "compatibility": "Steel Frame"
+  },
+  "lifecycleAndMaintenance": {
+    "maintenanceRequirements": "Regular inspection of seals and connections"
+  },
+  "aestheticAndCustomizationOptions": {
+    "modularAdaptability": "Stackable up to 3 units"
+  }
+}

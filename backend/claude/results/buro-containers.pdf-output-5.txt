@@ -1,0 +1,29 @@
+This appears to be a technical specification document for office containers in German. The document details various specifications including:
+
+Key details:
+- It's a technical description (Technische Beschreibung) for office containers (Bürocontainer)
+- Document version V2.0 / 2022
+
+The document includes specifications for:
+
+1. Dimensions and weights for different container sizes (10', 16', 20', 24', 30')
+2. Construction details for:
+- Roof construction (steel profiles, insulation, etc.)
+- Floor construction 
+- Wall panels
+- Corner posts
+- Doors and windows
+- Electrical installation
+
+Technical specifications include:
+- Insulation values (U-values)
+- Load capacities
+- Wind resistance (up to 100 km/h)
+- Door dimensions (820 x 2000 mm)
+- Window specifications (790 x 1000 mm)
+
+The document includes a product image showing a white container unit with a door and windows, branded with "CONZEPT" logo.
+
+The document appears to be a comprehensive technical specification sheet for modular office containers produced by Conzept Container Modulbau & Handel GmbH.
+
+Would you like me to focus on any particular aspect of these specifications in more detail?

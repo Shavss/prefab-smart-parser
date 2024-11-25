@@ -1,0 +1,83 @@
+{
+  "id": "Buro-ContainerV2.0/2022",
+  "name": "Buro-Container",
+  "description": "A standardized container designed to provide an office space. It is fabricated using cold-rolled steel profiles and conforming to ISO Norm dimensions, with insulation options like mineral wool or polyurethane foam",
+  "boundingBox": {
+    "width": 2.438,
+    "height": 2.791,
+    "depth": 7.335
+  },
+  "images": [],
+  "buildingSystem": "Modular",
+  "productCategory": "Workplace Products",
+  "material": {
+    "finishMaterial": "Cold-rolled steel profile, 3 mm strong, welded",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2.438,
+      "max": 2.438
+    },
+    "height": {
+      "min": 2.791,
+      "max": 2.791
+    },
+    "length": {
+      "min": 2.991,
+      "max": 9.125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 1800,
+      "unit": "kg",
+      "loadDistribution": "Each pillar"
+    },
+    "seismicResistance": "N/A",
+    "windLoadResistance": "up to 100km/h"
+  },
+  "performance": {
+    "resistanceToFireClassification": "A1",
+    "thermalTransmittance": 0.34,
+    "acousticProperties": {
+      "soundInsulationRating": "N/A",
+      "acousticPerformance": "N/A"
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "N/A",
+    "classification": "N/A",
+    "VOCEmissions": "N/A",
+    "recyclability": "N/A",
+    "energyEfficiency": "N/A"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "ISO Norm size conforming container, Insulation values of U: 0.36 W/m²K, Wind resistance max 100km/h",
+    "certifications": {
+      "certificationTypes": [],
+      "regulatoryApprovals": []
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Welded or screwed connection",
+    "installationTime": "N/A",
+    "compatibility": "N/A"
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "N/A",
+    "maintenanceRequirements": "N/A",
+    "warranty": "N/A"
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": [
+      "RAL 9002 Gray white"
+    ],
+    "texture": "N/A",
+    "modularAdaptability": "Yes"
+  },
+  "economicFactors": {
+    "costPerUnit": 0,
+    "manufacturingLeadTime": "N/A"
+  }
+}

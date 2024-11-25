@@ -1,0 +1,70 @@
+{
+  "product": "Office Containers (Bürocontainer)",
+  "manufacturer": "Conzept Container",
+  "dimensions": {
+    "length_range": {
+      "min": "2991mm",
+      "max": "9125mm"
+    },
+    "width": "2438mm",
+    "height": "2791mm",
+    "sizes": "10' to 30'"
+  },
+  "construction": {
+    "roof": {
+      "material": "cold-rolled steel profiles",
+      "thickness": "3mm",
+      "construction": "welded"
+    },
+    "floor": {
+      "material": "cold-rolled steel profiles",
+      "features": ["optional forklift pockets"]
+    },
+    "walls": {
+      "type": "interchangeable panels",
+      "cladding": "steel sheet"
+    },
+    "insulation": {
+      "options": [
+        {
+          "material": "PUR foam",
+          "thickness": "50-150mm"
+        },
+        {
+          "material": "mineral wool",
+          "thickness": "60-200mm"
+        }
+      ]
+    }
+  },
+  "features": {
+    "door": {
+      "type": "single steel",
+      "dimensions": "820x2000mm"
+    },
+    "windows": {
+      "material": "PVC",
+      "glazing": "double"
+    },
+    "electrical": {
+      "standard": "CEE",
+      "includes": ["lighting", "outlets"]
+    },
+    "climate_control": {
+      "options": ["electric heater", "AC units"]
+    }
+  },
+  "technical_specifications": {
+    "load_capacity": "2.5 kN/m²",
+    "snow_load": "1.5 kN/m²",
+    "wind_resistance": "100 km/h",
+    "thermal_insulation": {
+      "u_value_range": "0.14-0.62 W/m²K"
+    },
+    "stacking_capacity": "3 units"
+  },
+  "installation_requirements": {
+    "foundation": "proper foundation points required",
+    "compliance": "local building regulations"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "4dd643ff-7ec7-4666-9c88-50b7d3da34e4",
+  "name": "Leitl Elementdecke",
+  "description": "Prefabricated concrete floor element manufactured by Leitl Beton GmbH & Co KG",
+  "boundingBox": {
+    "width": 2400,
+    "height": 300,
+    "depth": 50
+  },
+  "images": [],
+  "buildingSystem": "Floors",
+  "productCategory": "Concrete Lattice Floor",
+  "material": {
+    "finishMaterial": "Concrete",
+    "structuralMaterial": "Concrete"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2400,
+      "max": 2400
+    },
+    "height": {
+      "min": 160,
+      "max": 300
+    },
+    "length": {
+      "min": 1300,
+      "max": 1700
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 7.50,
+      "unit": "kN",
+      "loadDistribution": "per square meter"
+    }
+  },
+  "performance": {
+    "resistanceToFireClassification": "2-hour",
+    "thermalTransmittance": 2.3,
+    "acousticProperties": {
+      "soundInsulationRating": "58-66 dB",
+      "acousticPerformance": "Standard"
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": "Austria",
+    "classification": "A"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "Standard floor element specifications",
+    "certifications": {
+      "certificationTypes": [],
+      "regulatoryApprovals": [
+        "ÖNORM EN 1992-1-1",
+        "ÖNORM B 1992-1-1"
+      ]
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Mortar",
+    "installationTime": "80 m²/h",
+    "compatibility": "Concrete Structure"
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "50+ years",
+    "maintenanceRequirements": "Standard concrete maintenance",
+    "warranty": "Standard warranty"
+  }
+}

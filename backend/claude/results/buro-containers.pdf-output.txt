@@ -1,0 +1,26 @@
+This appears to be a technical specification document for office containers (Bürocontainer) from Conzept Container. Here are the key details:
+
+Construction Specifications:
+- Available in sizes from 10' to 30' length
+- Standard dimensions (exterior) range from:
+  - Length: 2,991mm - 9,125mm
+  - Width: 2,438mm
+  - Height: 2,791mm
+
+Key Features:
+- Roof: Cold-rolled steel profiles, 3mm thick, welded construction
+- Floor: Cold-rolled steel profiles with optional forklift pockets
+- Walls: Interchangeable wall panels with steel sheet cladding
+- Insulation: Choice of PUR foam (50-150mm) or mineral wool (60-200mm)
+- Door: Single steel door (820 x 2,000mm)
+- Windows: PVC windows with double glazing
+- Electrical: CEE-standard installation with lighting and outlets
+- Heating/Cooling: Optional electric heater and AC units available
+
+Technical Specifications:
+- Load capacity: 2.5 kN/m² standard (reinforcement possible)
+- Snow load: 1.5 kN/m² standard
+- Wind resistance: Up to 100 km/h
+- Thermal insulation values vary by wall thickness (U-values from 0.14-0.62 W/m²K)
+
+The containers can be stacked up to 3 units high and are designed for easy transport and installation. They require proper foundation points for setup and must comply with local building regulations.

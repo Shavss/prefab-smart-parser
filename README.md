@@ -1,6 +1,8 @@
 # PDFtoDLM: Multi-File PDF to JSON Extraction Tool
 
-This project provides a complete solution to upload multiple PDF files, visualize the PDFs in the frontend, and automatically generate corresponding JSON schemas using a backend processing pipeline with OpenAI's API. The JSON schemas are displayed in the frontend with an option to edit and download them.
+[AEC Hackathon Munich](https://www.tum-venture-labs.de/events/aec-hackathon-munich-edition/) : [MOD Smart Prefab challenge](https://github.com/mod-construction/prefab-smart-parser)
+
+Testing both  [OpenAI](backend/openai) and [Claude](backend/claude) LLM APIs with a [frontend](frontend) than can load multiple PDF files, visualize the PDFs in the frontend, and automatically generate corresponding JSON schemas using a backend processing pipeline with OpenAI's API. The JSON schemas are displayed in the frontend with an option to edit and download them.
 
 ## **Features**
 - Upload multiple PDF files via the web interface.
@@ -10,27 +12,30 @@ This project provides a complete solution to upload multiple PDF files, visualiz
 - Options to save edited JSON and download it locally.
 
 ## **Tech Stack**
+
+**OpenAI**
+
 - **Frontend**: React.js
 - **Backend**: Node.js with Express
 - **PDF Parsing**: pdf-parse, pdf-lib
 - **AI Integration**: OpenAI API
 
-## **Table of Contents**
-1. [Installation](#installation)
-2. [Setup](#setup)
-3. [Usage](#usage)
-4. [Project Structure](#project-structure)
-5. [Customization](#customization)
-6. [Screenshots](#screenshots)
-7. [License](#license)
-
----
-
 ## **Installation**
 
 ### **Prerequisites**
+
+**OpenAI backend**
+
 - **Node.js** (v14 or higher)
 - **npm** or **yarn**
 - OpenAI API Key (requires a valid API key from [OpenAI](https://platform.openai.com/))
-  
 
+**Claude backend**
+
+- **Python**
+- Claude API Key
+- [Installation](backend/claude/README.md)
+
+## Commit history
+
+* moved 'example output' to backend/openai/output

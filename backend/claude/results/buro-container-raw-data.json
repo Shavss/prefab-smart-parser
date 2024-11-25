@@ -1,0 +1,87 @@
+{
+  "manufacturer": "Conzept Container Modulbau & Handel GmbH",
+  "product": "Office Containers",
+  "construction": {
+    "roof": {
+      "material": "Cold-rolled steel profiles",
+      "thickness": "3mm",
+      "type": "Welded construction with double seam roofing",
+      "uValue": "0.36 W/m²K"
+    },
+    "floor": {
+      "material": "Cold-rolled steel profiles",
+      "thickness": "3mm",
+      "type": "Welded construction",
+      "uValue": "0.34 W/m²K"
+    },
+    "insulation": {
+      "material": "Mineral wool",
+      "thickness": "100mm",
+      "fireClass": "A1",
+      "properties": "Non-combustible"
+    }
+  },
+  "dimensions": {
+    "10ft": {
+      "length": 2991,
+      "width": 2438,
+      "height": 2791
+    },
+    "16ft": {
+      "length": 4886,
+      "width": 2438,
+      "height": 2791
+    },
+    "20ft": {
+      "length": 6058,
+      "width": 2438,
+      "height": 2791
+    },
+    "24ft": {
+      "length": 7335,
+      "width": 2438,
+      "height": 2791
+    },
+    "30ft": {
+      "length": 9125,
+      "width": 2438,
+      "height": 2791
+    }
+  },
+  "features": {
+    "door": {
+      "type": "Single-leaf steel",
+      "dimensions": {
+        "width": 820,
+        "height": 2000
+      }
+    },
+    "windows": {
+      "material": "PVC",
+      "glazing": "Insulated"
+    },
+    "electrical": {
+      "standard": "CEE",
+      "lighting": "Fluorescent"
+    },
+    "heating": {
+      "type": "Electric convector",
+      "power": "2kW",
+      "features": "Thermostat",
+      "optional": true
+    },
+    "airConditioning": {
+      "available": true,
+      "optional": true
+    }
+  },
+  "loadCapacities": {
+    "floorLoad": "2.5 kN/m²",
+    "roofSnowLoad": "1.5 kN/m²",
+    "windResistance": "100 km/h"
+  },
+  "stackingCapability": {
+    "maxUnits": 3,
+    "requirements": "Proper foundations"
+  }
+}

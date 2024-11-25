@@ -1,0 +1,75 @@
+{
+  "Container Specifications": {
+    "Document Version": "V2.0 / 2022",
+    "Type": "Office Container",
+    "Available Sizes": {
+      "10'": {
+        "External": "2991x2438x2791mm",
+        "Internal": "2820x2267x2500mm",
+        "Area": "6.4m²",
+        "Weight": "1225kg"
+      },
+      "16'": {
+        "External": "4886x2438x2791mm",
+        "Internal": "4715x2267x2500mm",
+        "Area": "10.7m²",
+        "Weight": "1650kg"
+      },
+      "20'": {
+        "External": "6058x2438x2791mm",
+        "Internal": "5887x2267x2500mm",
+        "Area": "13.4m²",
+        "Weight": "1850kg"
+      },
+      "24'": {
+        "External": "7335x2438x2791mm",
+        "Internal": "7164x2267x2500mm",
+        "Area": "16.3m²",
+        "Weight": "2150kg"
+      },
+      "30'": {
+        "External": "9125x2438x2791mm",
+        "Internal": "8954x2267x2500mm",
+        "Area": "20.3m²",
+        "Weight": "2550kg"
+      }
+    },
+    "Construction Details": {
+      "Roof": {
+        "Frame": "Cold-rolled steel profiles, 3mm thick",
+        "Insulation": "Mineral wool 100mm",
+        "U-value": "0.36 W/m²K"
+      },
+      "Floor": {
+        "Construction": "Cement-bonded particle board 21mm",
+        "Covering": "PVC flooring 1.5mm",
+        "Insulation": "Mineral wool 100mm",
+        "U-value": "0.34 W/m²K"
+      },
+      "Walls": {
+        "External": "Profiled steel sheet 0.55mm",
+        "Internal": "Smooth steel sheet 0.55mm",
+        "Insulation": "PUR 50-150mm or MW 60-200mm"
+      },
+      "Door": {
+        "Dimensions": "820x2000mm",
+        "Type": "Single-wing steel door"
+      },
+      "Window": {
+        "Dimensions": "790x1000mm",
+        "Type": "PVC with turn/tilt mechanism",
+        "U-value": "1.6 W/m²K"
+      }
+    },
+    "Load Capacities": {
+      "Floor Load": "2.5 kN/m²",
+      "Roof Snow Load": "1.5 kN/m²",
+      "Wind Resistance": "Max 100 km/h"
+    },
+    "Electrical": {
+      "Connection": "CEE 5-pole, 32A, 400V AC",
+      "Lighting": "Fluorescent tubes 2x36W",
+      "Heating": "Electric convector 2kW"
+    }
+  }
+}
