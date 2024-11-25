@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Frontend
+
+The frontend can load multiple PDF files, visualize the PDFs in the frontend, and automatically generate corresponding JSON schemas using a backend processing pipeline with OpenAI's API. The JSON schemas are displayed in the frontend with an option to edit and download them.
+
+[Github source](https://github.com/kempcao/PDFtoDLM) from Kemp ([Jianpeng Cao](https://www.linkedin.com/in/jianpeng-cao-758511126/)) before merging into this repo.
+
+## React 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

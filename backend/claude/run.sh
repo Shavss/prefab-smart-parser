@@ -24,6 +24,18 @@ openapi()
 	extract
 }
 
+init_claude_key()
+{
+	local keyfile=".claude_key"
+	if [[ ! -f $keyfile ]]
+	then
+		echo "Can't find $keyfile"
+		return
+	fi
+	local key=$(cat $keyfile)
+	export ANTHROPIC_API_KEY=$key
+}
+
 claude()
 {
 	model="-m claude-3.5-sonnet"
@@ -33,7 +45,8 @@ claude()
 panels()
 {
 	file="insulated-panels.pdf"
-	model="-m claude-3.5-sonnet"
+	model="-m claude-3.5-sonnet"	
+	init_claude_key
 	extract
 }
 
@@ -41,6 +54,7 @@ containers()
 {
 	file="buro-containers.pdf"
 	model="-m claude-3.5-sonnet"
+	init_claude_key
 	extract
 }
 

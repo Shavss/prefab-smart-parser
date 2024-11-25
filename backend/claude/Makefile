@@ -13,6 +13,8 @@ insulated-panels:
 containers:
 	./run.sh containers
 
+test:
+	poetry run llm -m claude-3.5-sonnet "what is LLM ?"
 extract-pdf:
 	poetry run llm -m claude-3.5-sonnet 'extract text' -a data/2.pdf > output.txt
 output-json:
