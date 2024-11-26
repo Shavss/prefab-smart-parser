@@ -22,7 +22,7 @@ This repository contains a Python service that processes PDF files to extract te
 - Python 3.11.10 or later  
 - OpenAI API key  
 
-### Steps
+### Steps 
 
 1. **Clone the Repository**
    Clone this repository to your local machine:
