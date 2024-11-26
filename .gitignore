@@ -35,3 +35,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+__pycache__/mod_dlm_schema.cpython-311.pyc
+__pycache__/ParseThat_by_llm.cpython-311.pyc
+__pycache__/ParseThat.cpython-311.pyc
+__pycache__/secret.cpython-311.pyc
+__pycache__/ParseThat_pdf.cpython-311.pyc
