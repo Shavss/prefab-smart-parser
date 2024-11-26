@@ -8,7 +8,7 @@ public static class DirectoryHelper
         {
             try
             {
-                System.IO.File.Delete(file);
+                File.Delete(file);
             }
             catch (Exception ex)
             {
