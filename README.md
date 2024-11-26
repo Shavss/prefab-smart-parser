@@ -16,6 +16,7 @@ This repository contains a web application built with ReactJS and .NET. It allow
 ## Installation
 
 ### Prerequisites
+- Link to python repository: https://github.com/LupoSun/AECHachathon_MOD_ParseThat
 - Node.js and npm
 - .NET SDK
 
