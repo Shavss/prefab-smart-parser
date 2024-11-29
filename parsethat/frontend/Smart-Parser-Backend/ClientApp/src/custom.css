@@ -1,0 +1,142 @@
+/* Provide sufficient contrast against white background */
+
+a {
+    color: #0366d6;
+}
+
+body{
+background-color: #262822;    
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+code {
+    color: #E01A76;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.max-height-600px {
+    max-height: 600px;
+}
+
+.h-800px {
+    height: 800px !important;
+}
+
+.h-700px {
+    height: 700px !important;
+}
+
+
+.h-600px {
+    height: 600px !important;
+}
+
+.h-400px {
+    height: 400px !important;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.w-200px{
+    width: 150px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/*.checkbox-container input[type="checkbox"]:checked::after {*/
+/*    content: '✔';*/
+/*    color: white;*/
+/*    font-size: 22px;*/
+/*    position: absolute;*/
+/*    left: 7px;*/
+/*    top: 3px;*/
+/*}*/
+
+.checkbox-container input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    /*color: #ACD79E;*/
+}
+
+.checkbox-container label:hover {
+    color: #3498db;
+}
+
+.vertical-line {
+    border-left: 2px solid white; /* Vertical line */
+    height: 100px;                /* Height of the line */
+}
+
+/* LoadingSpinner.css */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the screen */
+}
+
+.spinner {
+    border: 4px solid #f3f3f3; /* Light grey border */
+    border-top: 4px solid #3498db; /* Blue border */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.actionBox{
+    marginTop: 10px;
+    border: 2px dashed #aaa;
+    borderRadius: 10px;
+    backgroundColor: #ACD79E;
+    transition: background-color 0.2s;
+    width: 100%;
+}
