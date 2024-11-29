@@ -1,0 +1,37 @@
+{
+  "name": "X-Plates",
+  "description": "Für Kreuz- und Querdenker - Aufbauten mit maximaler Flexibilität",
+  "boundingBox": {
+    "width": 1000,
+    "height": 200,
+    "depth": 1000
+  },
+  "images": [],
+  "buildingSystem": "Wall",
+  "productCategory": "Solid Wall Panels",
+  "material": {
+    "finishMaterial": "Timber",
+    "structuralMaterial": "Timber"
+  },
+  "dimensional": {
+    "width": {
+      "min": 0,
+      "max": 1000
+    },
+    "height": {
+      "min": 60,
+      "max": 200
+    },
+    "length": {
+      "min": 0,
+      "max": 1000
+    }
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "Layer options: 3 or 5 layers; Density: 450 kg/m³; Outer layers perpendicular to longitudinal direction; Cover layers in non-visible quality by default; Layer notation: X=|20| indicates lamellae orientation",
+    "certifications": {
+      "certificationTypes": ["Technical Specification"],
+      "regulatoryApprovals": []
+    }
+  }
+}

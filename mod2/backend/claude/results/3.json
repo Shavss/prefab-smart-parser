@@ -1,0 +1,52 @@
+{
+  "name": "KOMA StandardLine Modular Kindergarten",
+  "description": "A modular kindergarten building consisting of 26 modules with 4 group rooms, accommodating various functional spaces including rest areas, kitchen, and office spaces.",
+  "boundingBox": {
+    "width": 470000,
+    "height": 2760,
+    "depth": 470000
+  },
+  "images": [],
+  "buildingSystem": "Modules",
+  "productCategory": "Volumetric module",
+  "material": {
+    "finishMaterial": "Other",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 470000,
+      "max": 470000
+    },
+    "height": {
+      "min": 2760,
+      "max": 2760
+    },
+    "length": {
+      "min": 470000,
+      "max": 470000
+    }
+  },
+  "performance": {
+    "resistanceToFireClassification": "1-hour",
+    "thermalTransmittance": 0.8,
+    "acousticProperties": {
+      "soundInsulationRating": "acoustic ceiling installed",
+      "acousticPerformance": "standard"
+    }
+  },
+  "installationAndConnectivity": {
+    "installationTime": "1 week"
+  },
+  "lifecycleAndMaintenance": {
+    "maintenanceRequirements": "Standard maintenance for PVC flooring and LED lighting systems"
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": ["RAL 7036"],
+    "texture": "trapezoidal sheet metal facade"
+  },
+  "economicFactors": {
+    "costPerUnit": 284000,
+    "manufacturingLeadTime": "1 week"
+  }
+}

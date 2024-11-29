@@ -1,0 +1,67 @@
+{
+  "id": "office-container-001",
+  "name": "Office Container",
+  "description": "Standard office container with multiple size options, high-quality insulation, and comprehensive electrical setup",
+  "boundingBox": {
+    "width": 2438,
+    "height": 2791,
+    "depth": 6058
+  },
+  "images": [],
+  "buildingSystem": "Modules",
+  "productCategory": "Volumetric module",
+  "material": {
+    "finishMaterial": "Steel",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2438,
+      "max": 2438
+    },
+    "height": {
+      "min": 2791,
+      "max": 2791
+    },
+    "length": {
+      "min": 2991,
+      "max": 9125
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 2.5,
+      "unit": "kN",
+      "loadDistribution": "Floor Load 2.5 kN/m²"
+    },
+    "windLoadResistance": "Class C"
+  },
+  "performance": {
+    "resistanceToFireClassification": "B",
+    "thermalTransmittance": 0.36,
+    "acousticProperties": {
+      "soundInsulationRating": "Standard",
+      "acousticPerformance": "Standard office acoustics"
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Bolt-on",
+    "installationTime": "1-2 days",
+    "compatibility": "Steel Frame"
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": "20+ years",
+    "maintenanceRequirements": "Regular inspection of seals and electrical systems",
+    "warranty": "5 years standard"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "V2.0 / 2022",
+    "certifications": {
+      "certificationTypes": ["CE", "ISO 9001"],
+      "regulatoryApprovals": ["European Building Standards"]
+    }
+  },
+  "economicFactors": {
+    "manufacturingLeadTime": "4-6 weeks"
+  }
+}

@@ -1,0 +1,35 @@
+This appears to be a technical specification document for office containers from Conzept Container. Here are the key details:
+
+Dimensions and Weights:
+- Available in 5 sizes from 10' to 30'
+- External widths: 2,438mm
+- External heights: 2,791mm 
+- Weights range from ~1,225kg (10') to ~2,550kg (30')
+
+Construction Details:
+Roof:
+- Cold-rolled steel profiles, 3mm thick, welded
+- Galvanized and coated steel sheet 0.55mm
+- Mineral wool insulation 100mm, fire class A1
+- U-value: 0.36 W/m²K
+
+Floor:
+- Cold-rolled steel profiles, 3mm thick, welded
+- Optional forklift pockets 1200mm center distance
+- Galvanized and coated sheet metal 0.75mm thick
+
+Wall Panels:
+- Interchangeable wall elements
+- Exterior: Lightly profiled galvanized steel 0.55mm
+- Interior: Smooth galvanized steel 0.55mm 
+- Color: RAL 9002 grey-white
+- Insulation: PUR foam 50-150mm or mineral wool 60-200mm
+
+Other Features:
+- Windows: PVC frame, 790x1000mm
+- Doors: Single steel door 820x2000mm
+- Electrical: CEE standard installation
+- Load capacity: 2.5 kN/m² standard floor load
+- Snow load: 1.5 kN/m² standard
+
+The document provides comprehensive technical specifications for commercial/office container units, including construction details, insulation values, and installation requirements.

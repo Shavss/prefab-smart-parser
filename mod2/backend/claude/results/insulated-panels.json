@@ -1,0 +1,60 @@
+{
+  "id": "4dd643ff-7ec7-4666-9c88-50b7d3da34e4",
+  "name": "Structural Insulated Panel (SIP)",
+  "description": "Structural Insulated Panel with OSB facings and foam core for building envelope construction",
+  "boundingBox": {
+    "width": 1200,
+    "height": 2400,
+    "depth": 165
+  },
+  "images": [],
+  "buildingSystem": "Wall",
+  "productCategory": "Structural Insulated Panels (SIPs)",
+  "material": {
+    "finishMaterial": "Timber",
+    "structuralMaterial": "Timber"
+  },
+  "dimensional": {
+    "width": {
+      "min": 600,
+      "max": 1200
+    },
+    "height": {
+      "min": 2400,
+      "max": 3600
+    },
+    "length": {
+      "min": 115,
+      "max": 165
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": 40,
+      "unit": "kN",
+      "loadDistribution": "Uniform distributed load"
+    }
+  },
+  "performance": {
+    "resistanceToFireClassification": "1-hour",
+    "thermalTransmittance": 0.2
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "Must meet local Building Code requirements for structural loads",
+    "certifications": {
+      "certificationTypes": ["SIPA member"],
+      "regulatoryApprovals": ["ICC-ES", "CCMC"]
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Adhesive",
+    "installationTime": "1-2 days per 100m2",
+    "compatibility": "Wood Frame"
+  },
+  "lifecycleAndMaintenance": {
+    "maintenanceRequirements": "Keep panels dry during transport/storage, prevent crushing/damage during handling"
+  },
+  "economicFactors": {
+    "manufacturingLeadTime": "4-6 weeks"
+  }
+}

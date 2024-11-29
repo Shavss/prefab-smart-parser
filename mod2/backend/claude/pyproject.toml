@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-tooling"
+version = "0.1.0"
+description = ""
+authors = ["milovann <mil01@free.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+anthropic= "*"
+llm = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

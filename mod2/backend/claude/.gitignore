@@ -1,0 +1,11 @@
+tmp
+.key
+.openapi
+.file
+data
+data.json
+instruct.txt
+model.json
+openapi.json
+output.txt
+result.json

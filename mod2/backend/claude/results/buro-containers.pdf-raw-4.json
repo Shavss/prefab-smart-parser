@@ -1,0 +1,90 @@
+{
+  "dimensions": {
+    "sizes_available": ["10'", "15'", "20'", "24'", "30'"],
+    "external_width": 2438,
+    "external_height": 2791,
+    "weights": {
+      "10_ft": 1225,
+      "30_ft": 2550
+    }
+  },
+  "construction": {
+    "roof": {
+      "profiles": {
+        "material": "cold-rolled steel",
+        "thickness": 3,
+        "treatment": "welded"
+      },
+      "sheet": {
+        "material": "galvanized steel",
+        "thickness": 0.55,
+        "coating": true
+      },
+      "insulation": {
+        "material": "mineral wool",
+        "thickness": 100,
+        "fire_class": "A1"
+      },
+      "u_value": 0.36
+    },
+    "floor": {
+      "profiles": {
+        "material": "cold-rolled steel",
+        "thickness": 3,
+        "treatment": "welded"
+      },
+      "forklift_pockets": {
+        "center_distance": 1200,
+        "optional": true
+      },
+      "sheet": {
+        "material": "galvanized steel",
+        "thickness": 0.75,
+        "coating": true
+      }
+    },
+    "walls": {
+      "type": "interchangeable",
+      "exterior": {
+        "material": "galvanized steel",
+        "profile": "lightly profiled",
+        "thickness": 0.55
+      },
+      "interior": {
+        "material": "galvanized steel",
+        "profile": "smooth",
+        "thickness": 0.55
+      },
+      "color": "RAL 9002 grey-white",
+      "insulation": {
+        "pur_foam": {
+          "thickness_range": [50, 150]
+        },
+        "mineral_wool": {
+          "thickness_range": [60, 200]
+        }
+      }
+    }
+  },
+  "features": {
+    "windows": {
+      "frame": "PVC",
+      "dimensions": {
+        "width": 790,
+        "height": 1000
+      }
+    },
+    "doors": {
+      "type": "single steel",
+      "dimensions": {
+        "width": 820,
+        "height": 2000
+      }
+    },
+    "electrical": "CEE standard",
+    "load_capacity": {
+      "floor": 2.5,
+      "snow": 1.5
+    }
+  }
+}

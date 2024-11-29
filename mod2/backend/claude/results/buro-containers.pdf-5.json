@@ -1,0 +1,47 @@
+{
+  "name": "Bürocontainer Technical Description",
+  "description": "Technical Specification for Office Containers by Conzept Container Modulbau & Handel GmbH",
+  "boundingBox": {
+    "width": 2438,
+    "height": 2591,
+    "depth": 6058
+  },
+  "images": [],
+  "buildingSystem": "Modules",
+  "productCategory": "Volumetric module",
+  "material": {
+    "finishMaterial": "Steel",
+    "structuralMaterial": "Steel"
+  },
+  "dimensional": {
+    "width": {
+      "min": 2438,
+      "max": 2438
+    },
+    "height": {
+      "min": 2591,
+      "max": 2591
+    },
+    "length": {
+      "min": 3048,
+      "max": 9144
+    }
+  },
+  "structuralProperties": {
+    "windLoadResistance": "Class B"
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Bolt-on"
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": ["white"],
+    "modularAdaptability": "Available in sizes: 10', 16', 20', 24', 30'"
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "V2.0 / 2022",
+    "certifications": {
+      "certificationTypes": [],
+      "regulatoryApprovals": []
+    }
+  }
+}

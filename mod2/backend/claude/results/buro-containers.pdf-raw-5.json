@@ -1,0 +1,58 @@
+{
+  "documentType": "Technical Specification",
+  "title": "Bürocontainer Technical Description",
+  "version": "V2.0 / 2022",
+  "manufacturer": "Conzept Container Modulbau & Handel GmbH",
+  "productType": "Office Containers",
+  
+  "containerSizes": [
+    "10'",
+    "16'",
+    "20'",
+    "24'",
+    "30'"
+  ],
+  
+  "constructionSpecs": {
+    "roof": {
+      "material": "steel profiles",
+      "includes": [
+        "insulation",
+        "structural support"
+      ]
+    },
+    "standardDoor": {
+      "dimensions": {
+        "width": 820,
+        "height": 2000,
+        "unit": "mm"
+      }
+    },
+    "standardWindow": {
+      "dimensions": {
+        "width": 790,
+        "height": 1000,
+        "unit": "mm"
+      }
+    }
+  },
+  
+  "technicalParameters": {
+    "windResistance": {
+      "maxSpeed": 100,
+      "unit": "km/h"
+    },
+    "features": [
+      "insulation",
+      "electrical installation",
+      "floor construction",
+      "wall panels",
+      "corner posts"
+    ]
+  },
+  
+  "branding": {
+    "logo": "CONZEPT",
+    "containerColor": "white"
+  }
+}

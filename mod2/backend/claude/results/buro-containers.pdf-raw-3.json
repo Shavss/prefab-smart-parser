@@ -1,0 +1,49 @@
+{
+  "dimensions": {
+    "length_range": ["10ft", "30ft"],
+    "external": {
+      "length": ["2991mm", "9125mm"],
+      "width": "2438mm",
+      "height": "2791mm"
+    }
+  },
+  "construction": {
+    "frame": "cold-rolled steel profiles 3mm",
+    "fittings": "ISO standard corner",
+    "insulation": {
+      "material": "mineral wool",
+      "thickness": "100mm",
+      "fire_class": "A1",
+      "u_value": "0.36 W/m²K"
+    }
+  },
+  "features": {
+    "walls": "interchangeable panels with steel sheet cladding",
+    "flooring": "PVC with R9 slip resistance",
+    "windows": {
+      "frame": "PVC",
+      "glazing": "double",
+      "size": "790x1000mm"
+    },
+    "door": {
+      "material": "steel",
+      "size": "820x2000mm"
+    },
+    "electrical": {
+      "standard": "CEE",
+      "lighting": "fluorescent 2x36W",
+      "heating": "2kW electric convector",
+      "air_conditioning": "optional"
+    }
+  },
+  "load_capacity": {
+    "floor": "2.5 kN/m²",
+    "snow": "1.5 kN/m²",
+    "wind_resistance": "100 km/h",
+    "stacking": "up to 3 units"
+  },
+  "handling": {
+    "methods": ["forklift", "crane"],
+    "crane_angle": "minimum 60° between cables and horizontal"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Structural Insulated Panel (SIP)",
+  "description": "Structural Insulated Panels (SIP) consisting of oriented strand board (OSB) faces with insulated core, designed for structural applications in building construction. Panels are capable of withstanding design loads including dead load, live loads, wind loads and seismic loads.",
+  "boundingBox": {
+    "width": null,
+    "height": null,
+    "depth": null
+  },
+  "images": [],
+  "buildingSystem": "Panels",
+  "productCategory": "Structural Insulated Panel",
+  "material": {
+    "finishMaterial": "Oriented Strand Board (OSB)",
+    "structuralMaterial": "Composite (OSB and Insulated Core)"
+  },
+  "dimensional": {
+    "width": {
+      "min": null,
+      "max": null
+    },
+    "height": {
+      "min": null,
+      "max": null
+    },
+    "length": {
+      "min": null,
+      "max": null
+    }
+  },
+  "structuralProperties": {
+    "loadBearingCapacity": {
+      "maximumLoad": null,
+      "unit": "As per local Building Code",
+      "loadDistribution": "Dead loads, live loads, wind loads, seismic loads"
+    }
+  },
+  "performance": {
+    "resistanceToFireClassification": null,
+    "thermalTransmittance": null,
+    "acousticProperties": {
+      "soundInsulationRating": null,
+      "acousticPerformance": null
+    }
+  },
+  "sustainability": {
+    "countryOfManufacturing": null,
+    "classification": null
+  },
+  "documentationAndCompliance": {
+    "technicalSpecifications": "ASTM C578 for EPS core, ASTM D2559 for adhesive",
+    "certifications": {
+      "certificationTypes": [
+        "ICC-ES evaluation report",
+        "Canadian Construction Materials Centre evaluation"
+      ],
+      "regulatoryApprovals": [
+        "Local Building Code compliance required"
+      ]
+    }
+  },
+  "installationAndConnectivity": {
+    "connectionType": "Panel joints with expanding urethane foam or approved sealing method",
+    "installationTime": null,
+    "compatibility": "Compatible with lumber: Spruce-Pine-Fir, Hem-Fir, Douglas Fir-Larch, Southern Pine"
+  },
+  "lifecycleAndMaintenance": {
+    "expectedLifespan": null,
+    "maintenanceRequirements": "Must be kept dry and protected with waterproof covering",
+    "warranty": null
+  },
+  "aestheticAndCustomizationOptions": {
+    "colorOptions": [],
+    "texture": "OSB exterior finish",
+    "modularAdaptability": "Can be cut to accurate lengths, angles, and sizes"
+  },
+  "economicFactors": {
+    "costPerUnit": null,
+    "manufacturingLeadTime": null
+  },
+  "additionalSpecifications": {
+    "coreOptions": [
+      "Expanded Polystyrene (EPS) - minimum density 0.9 pcf",
+      "Polyurethane foam core",
+      "Extruded polystyrene (XPS) - minimum density 1.3 pcf"
+    ],
+    "osbThickness": "7/16 inch minimum",
+    "installerRequirements": "Minimum 3 years experience or certified SIP training program completion",
+    "fasteners": {
+      "nails": "ASTM F1667",
+      "screws": "Pancake head, min thread diameter 0.255\", min shank diameter 0.190\", min head diameter 0.625\""
+    }
+  }
+}
