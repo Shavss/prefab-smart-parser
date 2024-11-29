@@ -1,0 +1,31 @@
+{
+  "id": "f8b0ab6c-75ad-4c24-8053-8d1a6c16cbb4",
+  "name": "Double Wall",
+  "description": "The reinforced double wall elements consist of two full-height precast panels that are firmly connected by standardized grid carriers. The two wall shells of at least 5 cm thickness are made of reinforced concrete.",
+  "boundingBox": {
+      "width": 1800,
+      "height": 9000,
+      "depth": 400
+  },
+  "images": [],
+  "buildingSystem": "Wall",
+  "productCategory": "Solid Wall Panels",
+  "material": {
+      "finishMaterial": "Concrete",
+      "structuralMaterial": "Concrete"
+  },
+  "dimensional": {
+      "width": {
+          "min": 1800,
+          "max": 3500
+      },
+      "height": {
+          "min": 2500,
+          "max": 9000
+      },
+      "length": {
+          "min": 500,
+          "max": 9000
+      }
+  }
+}

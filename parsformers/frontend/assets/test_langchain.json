@@ -1,0 +1,58 @@
+{
+    "id": "27549645-2e4e-4335-b9c3-c2dafc3a97f9",
+    "name": "Unknown Element",
+    "description": "The text describes solid wall panels made of concrete with specific dimensions.",
+    "boundingBox": {
+        "width": 10,
+        "height": 9000,
+        "depth": 0
+    },
+    "images": [],
+    "buildingSystem": "Wall",
+    "productCategory": "Solid Wall Panels",
+    "material": {
+        "finishMaterial": "Concrete",
+        "structuralMaterial": "Concrete"
+    },
+    "dimensional": {
+        "width": {
+            "min": 1800,
+            "max": 9000
+        },
+        "height": {
+            "min": 0,
+            "max": 9000
+        }
+    },
+    "structuralProperties": {
+        "loadBearingCapacity": {
+            "maximumLoad": "None",
+            "unit": 250,
+            "loadDistribution": "None"
+        }
+    },
+    "performance": {
+        "resistanceToFireClassification": "None",
+        "thermalTransmittance": "None",
+        "acousticProperties": {
+            "soundInsulationRating": "None",
+            "acousticPerformance": "High sound insulation"
+        }
+    },
+    "sustainability": {
+        "countryOfManufacturing": "Germany",
+        "classification": "None"
+    },
+    "documentationAndCompliance": {
+        "technicalSpecifications": "None",
+        "certifications": {
+            "certificationTypes": [],
+            "regulatoryApprovals": []
+        }
+    },
+    "lifecycleAndMaintenance": {
+        "expectedLifespan": "None",
+        "maintenanceRequirements": "None",
+        "warranty": "None"
+    }
+}
