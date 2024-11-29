@@ -1,0 +1,64 @@
+[
+    {
+        "id": "ee2bd73c-7af4-4077-b84e-f05bf64e8544",
+        "name": "Doppelwand Element",
+        "description": "The text describes solid wall panels made of reinforced concrete with specific dimensions.",
+        "boundingBox": {
+            "width": 1234,
+            "height": 9000,
+            "depth": 500
+        },
+        "images": [],
+        "buildingSystem": "Wall",
+        "productCategory": "Solid Wall Panels",
+        "material": {
+            "finishMaterial": "Concrete",
+            "structuralMaterial": "Concrete"
+        },
+        "dimensional": {
+            "width": {
+                "min": 180,
+                "max": 400
+            },
+            "height": {
+                "min": 0,
+                "max": 0
+            },
+            "length": {
+                "min": 0,
+                "max": 0
+            }
+        },
+        "structuralProperties": {
+            "loadBearingCapacity": {
+                "maximumLoad": 250,
+                "unit": "kg",
+                "loadDistribution": "None"
+            }
+        },
+        "performance": {
+            "resistanceToFireClassification": "None",
+            "thermalTransmittance": "None",
+            "acousticProperties": {
+                "soundInsulationRating": "High",
+                "acousticPerformance": "High sound insulation"
+            }
+        },
+        "sustainability": {
+            "countryOfManufacturing": "Germany",
+            "classification": "None"
+        },
+        "documentationAndCompliance": {
+            "technicalSpecifications": "None",
+            "certifications": {
+                "certificationTypes": [],
+                "regulatoryApprovals": []
+            }
+        },
+        "lifecycleAndMaintenance": {
+            "expectedLifespan": "None",
+            "maintenanceRequirements": "Regular inspection and cleaning",
+            "warranty": "None"
+        }
+    }
+]
