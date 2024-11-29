@@ -53,5 +53,5 @@ MOD is an open-source machine-learning powered platform that unlocks the prefab 
 Learn more about MOD and join us in shaping the future of modular construction [https://mod.construction](https://mod.construction)! 🚀
 
 
-## Contributors
-We thank everyone who contributed to this project, this was not possible without your support: [Contributors](CONTRIBUTORS.md)
+### 🙌 Thanks to Our Contributors
+A huge thank you to all the amazing contributors who have helped make this project better. You can find the full list of contributors [here](CONTRIBUTORS.md).  
