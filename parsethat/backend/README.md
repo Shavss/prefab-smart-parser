@@ -8,7 +8,7 @@
 This repository contains a Python service that processes PDF files to extract text and tables, then converts the extracted content into structured data using OpenAI's models.  
 
 ## Features  
-- Extracts text and tables from PDF files using `pdfplumber` or a similar library.  
+- Extracts text and tables from PDF files using `marker` library.  
 - Utilizes OpenAI APIs for prompting and converting extracted content into structured data.  
 - Receives PDF file paths from a web application and returns structured data in JSON format.  
 
